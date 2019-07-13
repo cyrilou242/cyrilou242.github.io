@@ -15,6 +15,8 @@ plainwhite:
   tagline: Ingénieur NLP
   date_format: "%-d %b %Y"
   sitemap: true # set to true to generate sitemap.xml content
+  disqus_shortname: catheu.tech
+  analytics_id: 'UA-143787397-1'
 
   # generate social links in footer
   social_links:
