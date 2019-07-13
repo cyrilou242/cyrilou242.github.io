@@ -11,18 +11,18 @@ show_excerpts: true # set to true to show excerpts on the homepage
 sass:
   sass_dir: _sass
 plainwhite:
+  disqus_shortname: catheu.tech
+  analytics_id: 'UA-143787397-1'
   name: Cyril de Catheu
   tagline: Ingénieur NLP
   date_format: "%-d %b %Y"
   sitemap: true # set to true to generate sitemap.xml content
-  disqus_shortname: catheu.tech
-  analytics_id: 'UA-143787397-1'
 
   # generate social links in footer
   social_links:
-    twitter: cdecatheu
+    twitter: deCatheu
     github:  cyrilou242
-    linkedIn: in/thelehhman
+    linkedIn: in/cyril-de-catheu
     rss: rss
     # dribbble: jekyll
     # facebook: jekyll
@@ -46,8 +46,8 @@ plainwhite:
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.md
+  header_pages:
+   - about.md
 
 # Build settings
 theme: plainwhite
