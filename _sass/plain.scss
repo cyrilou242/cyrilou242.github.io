@@ -69,10 +69,10 @@ main {
 	.about {
 		display: flex;
 		height: 100vh;
-		padding-bottom: 1vh;
+		padding-bottom: 0vh;
+		padding-top: 10vh;
 		@media screen and (max-width: $mobileW) {
 			height: auto;
-			padding-top: 10vh;
 			padding-bottom: 0vh;
 			img, .hypem {
 			display: none;
@@ -83,7 +83,7 @@ main {
 			position: fixed;
 		}
 		min-width: $leftWidth;
-		justify-content: center;
+		justify-content: flex-start;
 		flex-direction: column;
 		align-items: center;
 		h2 {
