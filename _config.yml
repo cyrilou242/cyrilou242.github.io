@@ -3,10 +3,9 @@ author: Cyril de Catheu
 email: cdecatheu@gmail.com
 lang: fr
 languages: ["en", "fr"]
-description: > # this means to ignore newlines until "show_exerpts:"
-  I write about NLP and machine learning in data intensive contexts.
-  In French.
+description: I write about NLP and machine learning in data intensive contexts. In French.
 show_excerpts: true # set to true to show excerpts on the homepage
+url: http://catheu.tech
 
 
 # Minima date format
