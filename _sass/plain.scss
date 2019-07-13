@@ -71,8 +71,9 @@ main {
 		height: 100vh;
 		padding-bottom: 30vh;
 		@media screen and (max-width: $mobileW) {
-			height: auto;	
-			padding: 10vh 0;
+			height: auto;
+			padding-top: 10vh;
+			padding-bottom: 3vh;
 			img {
 			display: none;
 			visibility: hidden;
@@ -147,7 +148,7 @@ main {
 	line-height: 1.2em;
 	font-size: 28px;
 }
-.posts, .post-container {
+.posts, .post-container,{
 	list-style-type: none;
 	margin: 45px 30px;
 	@media screen and (max-width: $smallMobileW){
@@ -205,4 +206,31 @@ main {
     color: #000;
     border-bottom: 3px solid #000;
     text-decoration: none;
+}
+
+.header {
+    border-bottom: 2px solid $linkColor;
+    opacity: 0.75;
+    height: 47px;
+    line-height: 60px;
+    margin: 0px 30px;
+	@media screen and (max-width: $smallMobileW){
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	@media screen and (max-width: $mobileW){
+		padding: 0 !important;
+		margin-top: 0;
+	}
+}
+
+.navbar {
+    float: right;
+}
+
+.navlink {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    padding-left: 20px;
 }
