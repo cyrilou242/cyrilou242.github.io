@@ -1,10 +1,13 @@
-title: En français dans le texte
-author: GitHub User
+title: catheu.tech
+author: Cyril de Catheu
 email: cdecatheu@gmail.com
+lang: fr
+languages: ["en", "fr"]
 description: > # this means to ignore newlines until "show_exerpts:"
   I write about NLP and machine learning in data intensive contexts.
   In French.
 show_excerpts: true # set to true to show excerpts on the homepage
+
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
@@ -46,12 +49,10 @@ plainwhite:
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-  header_pages:
-   - about.md
 
 # Build settings
 theme: plainwhite
 
 plugins:
   - jekyll-seo-tag
-#  - jekyll-feed
+  - jekyll-feed

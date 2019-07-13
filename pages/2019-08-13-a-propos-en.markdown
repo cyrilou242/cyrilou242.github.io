@@ -1,12 +1,12 @@
 ---
 layout: page
-title:  "A PROPOS"
+title:  "ABOUT"
 date:   2019-08-13 21:03:36 +0530
 categories: Javascript NodeJS
-lang: fr
+lang: en
 ref: about
 ---
-ceci est le about en francais.
+ceci est le about en anglai.
 
 ```javascript
 const Razorpay = require('razorpay');

@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Un second post en francais"
+title:  "A second post in english"
 date:   2019-04-24 21:03:36 +0530
-categories: Javascript NodeJS
-lang: fr
+categories: NLP NodeJS
+lang: en
 ref: article2
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse

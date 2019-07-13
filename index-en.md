@@ -1,5 +1,5 @@
 ---
 layout: home
-lang: fr
+lang: en
 ref: home
 ---

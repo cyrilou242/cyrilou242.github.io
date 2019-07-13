@@ -1,12 +1,12 @@
 ---
-layout: page
-title:  "A PROPOS"
-date:   2019-08-13 21:03:36 +0530
+layout: post
+title:  "Integrating an english article"
+date:   2019-03-23 21:03:36 +0530
 categories: Javascript NodeJS
-lang: fr
-ref: about
+lang: en
+ref: article1
 ---
-ceci est le about en francais.
+English article. I guess im a obliged to have a full line to get a full line. That requires to write a line in full.
 
 ```javascript
 const Razorpay = require('razorpay');

@@ -8,7 +8,8 @@ layout: default
 </a>
 <div class="post-meta">
 	<ul class="post-categories">
-		{%- for tag in page.categories -%}
+		{% assign tags=page.categories | where:"lang", page.lang %}
+		{%- for tag in tags -%}
 		<li>{{ tag }}</li>
 		{%- endfor -%}
 	</ul>
