@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Intégrer un article en francais"
-date:   2019-03-23 21:03:36 +0530
-categories: Javascript NodeJS
+title:  "Tester la mise à jour du feed rss"
+date:   2019-05-23 21:03:36 +0530
+categories: Tests Management
 lang: fr
-ref: article1
+ref: article3
 ---
-Article en francais.
+Article en francais. Bla Bla Bla.
 
 ```javascript
 const Razorpay = require('razorpay');

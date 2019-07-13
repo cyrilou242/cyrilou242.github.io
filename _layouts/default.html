@@ -20,7 +20,7 @@
 				<a href="https://github.com/{{ site.plainwhite.social_links.github }}"><li><i class="icon-github-circled"></i></li></a>
 				<a href="https://www.linkedin.com/{{ site.plainwhite.social_links.linkedIn }}"><li><i class="icon-linkedin-squared"></i></li></a>
 				<a href="https://twitter.com/{{ site.plainwhite.social_links.twitter}}"><li><i class="icon-twitter-squared"></i></li></a>
-				<a type="application/atom+xml" href="/feed.xml"><li><i class="fas fa-rss-square"></i></li></a>
+				<a type="application/atom+xml" href="/feed.xml"><li><i class="rssfeed fas fa-rss-square"></i></li></a>
 			</ul>
 			<ul class="social">
 				{% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
@@ -32,6 +32,10 @@
 						<a href="{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a>
 				{% endfor %}
 			</ul>
+			<div class="hypem">
+				<br>
+				<div id="hypem-widget"></div><script type="text/javascript" src="https://hypem.com/widget/v2/loved/cyrilou242/6/hype.js?bcol=FEF2EB&tcol=111111&lcol=ff4e47"></script>
+			</div>
 		</section>
 		<section class="content">
 			<div class="header">

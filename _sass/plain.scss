@@ -69,12 +69,12 @@ main {
 	.about {
 		display: flex;
 		height: 100vh;
-		padding-bottom: 30vh;
+		padding-bottom: 1vh;
 		@media screen and (max-width: $mobileW) {
 			height: auto;
 			padding-top: 10vh;
-			padding-bottom: 3vh;
-			img {
+			padding-bottom: 0vh;
+			img, .hypem {
 			display: none;
 			visibility: hidden;
 		    }
@@ -237,4 +237,11 @@ main {
 
 .en:lang(en), .fr:lang(fr){
     font-weight: bold;
+}
+
+.rssfeed {
+    margin-right: .2em;
+    margin-left: .2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
