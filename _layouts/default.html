@@ -32,10 +32,14 @@
 						<a href="{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a>
 				{% endfor %}
 			</ul>
+			{%- if site.plainwhite.hypemachine -%}
 			<div class="hypem">
-
-				<div id="hypem-widget"></div><script type="text/javascript" src="https://hypem.com/widget/v2/loved/cyrilou242/6/hype.js?bcol=fef2eb&tcol=ff4e47&lcol=ff4e47"></script>
+				<div id="hypem-widget"></div><script type="text/javascript" src="https://hypem.com/widget/v2/loved/
+				{{site.plainwhite.hypemachine.account}}/6/hype.js?bcol={{site.plainwhite.hypemachine.bcol}}&
+				tcol={{site.plainwhite.hypemachine.tcol}}&
+				lcol={{site.plainwhite.hypemachine.lcol}}"></script>
 			</div>
+			{%- endif -%}
 		</section>
 		<section class="content">
 			<div class="header">
