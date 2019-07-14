@@ -42,8 +42,8 @@
 			{%- endif -%}
 		</section>
 		<section class="content">
-			<div class="header">
-			<nav class="navbar scroll">
+			<header class="header">
+			<nav class="navbar">
 				{% assign pages=site.pages | where:"lang", page.lang  %}
 				{%- for page in pages -%}
 				{%- if page.url contains "/pages" -%}
@@ -51,7 +51,7 @@
 				{%- endif -%}
 				{%- endfor -%}
 			</nav>
-			</div>
+			</header>
 			{{ content }}
 		</section>
 	</main>
