@@ -257,6 +257,10 @@ main {
     font-weight: 700;
     font-size: 14px;
     padding-left: 20px;
+    @media screen and (max-width: $mobileW){
+			padding-left: 0px;
+			padding-right: 20px;
+		}
 }
 
 .en:lang(en), .fr:lang(fr){
