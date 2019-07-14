@@ -248,7 +248,9 @@ main {
 }
 
 .navbar::-webkit-scrollbar {
-  display: none; }
+  display: none;
+  visibility: hidden;
+  }
 
 .navlink {
     text-decoration: none;
