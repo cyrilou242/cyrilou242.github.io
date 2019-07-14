@@ -147,6 +147,12 @@ main {
 .post-title {
 	line-height: 1.2em;
 	font-size: 28px;
+	@media screen and (max-width: $mobileW) {
+			font-size: 21px;
+		}
+	@media screen and (min-width: $mobileW + 1) {
+			font-size: 28px;
+		}
 }
 .posts, .post-container,{
 	list-style-type: none;
