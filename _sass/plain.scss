@@ -244,13 +244,19 @@ main {
     @media screen and (min-width: $mobileW + 1) {
 			float: right;
 		}
-
+    &::-webkit-scrollbar {
+      display: none;
+      visibility: hidden;
+      background: transparent;
+      width: 0px;
+     }
+    &::-webkit-scrollbar-thumb {
+        display: none;
+        visibility: hidden;
+    }
 }
 
-.navbar::-webkit-scrollbar {
-  display: none;
-  visibility: hidden;
-  }
+
 
 .navlink {
     text-decoration: none;
