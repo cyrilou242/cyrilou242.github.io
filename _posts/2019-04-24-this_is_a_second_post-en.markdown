@@ -2,7 +2,7 @@
 layout: post
 title:  "A second post in english"
 date:   2019-04-24 21:03:36 +0530
-categories: NLP NodeJS
+categories: Management
 lang: en
 ref: article2
 ---

@@ -2,7 +2,7 @@
 layout: post
 title:  "Un second post en francais"
 date:   2019-04-24 21:03:36 +0530
-categories: Javascript NodeJS
+categories: Management
 lang: fr
 ref: article2
 ---

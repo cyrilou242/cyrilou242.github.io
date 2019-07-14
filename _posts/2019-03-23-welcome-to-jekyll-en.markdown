@@ -2,7 +2,7 @@
 layout: post
 title:  "Integrating an english article"
 date:   2019-03-23 21:03:36 +0530
-categories: Javascript NodeJS
+categories: Opinion
 lang: en
 ref: article1
 ---

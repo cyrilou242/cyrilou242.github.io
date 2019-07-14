@@ -2,7 +2,7 @@
 layout: post
 title:  "Tester la mise à jour du feed rss"
 date:   2019-05-23 21:03:36 +0530
-categories: Tests Management
+categories: NLP
 lang: fr
 ref: article3
 ---
