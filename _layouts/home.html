@@ -13,7 +13,6 @@ layout: default
 <ul class="posts">
 	{%- for post in posts -%}
 	<li>
-		{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 		<a class="post-link" href="{{ post.url | relative_url }}">
 			<h2 class="post-title">{{ post.title | escape }}</h2>
 		</a>
@@ -23,7 +22,7 @@ layout: default
 				<li>{{ tag }}</li>
 				{%- endfor -%}
 			</ul>
-			<div class="post-date"><i class="icon-calendar"></i>{{ post.date | date: date_format }}</div>
+			<div class="post-date"><i class="icon-calendar"></i>{% include date.html date=post.date %}</div>
 		</div>
 		<div class="post">
 			{%- if site.show_excerpts -%}
