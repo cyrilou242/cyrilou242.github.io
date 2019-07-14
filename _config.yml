@@ -16,7 +16,6 @@ plainwhite:
   disqus_shortname: catheu.tech
   analytics_id: 'UA-143787397-1'
   name: Cyril de Catheu
-  tagline: Ingénieur NLP
   date_format: "%-d %b %Y"
   sitemap: true # set to true to generate sitemap.xml content
 
@@ -48,6 +47,19 @@ plainwhite:
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
+
+t:
+  en:
+    tagline: "NLP engineer"
+    home:
+      name: "Home"
+      url: "/index-en.html"
+
+  fr:
+    tagline: "Ingénieur NLP"
+    home:
+      name: "Accueil"
+      url: "/"
 
 # Build settings
 theme: plainwhite
