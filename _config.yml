@@ -13,7 +13,7 @@ url: http://catheu.tech
 sass:
   sass_dir: _sass
 plainwhite:
-  disqus_shortname: catheu.tech
+  disqus_shortname: catheu-tech
   analytics_id: 'UA-143787397-1'
   name: Cyril de Catheu
   date_format: "%-d %b %Y"
