@@ -2,9 +2,9 @@
 
 My blog based on the following jekyll theme:
 
-**Demo**: [thelehhman.com](https://thelehhman.com)
+**Demo**: [catheu.tech](http://catheu.tech/index-en.html)
 
 ![plainwhite theme preview](/screenshot.png)
 
 ## License
-Not sure yet
+MIT
