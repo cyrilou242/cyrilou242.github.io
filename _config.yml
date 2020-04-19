@@ -38,13 +38,13 @@ plainwhite:
 
 t:
   en:
-    tagline: "NLP engineer"
+    tagline: "ML engineer"
     home:
       name: "Home"
       url: "/index-en.html"
 
   fr:
-    tagline: "Ingénieur NLP"
+    tagline: "Ingénieur ML"
     home:
       name: "Accueil"
       url: "/"

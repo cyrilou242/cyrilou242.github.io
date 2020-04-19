@@ -2,11 +2,11 @@
 layout: page
 title:  "A PROPOS"
 date:   2019-08-13 21:03:36 +0530
-categories: Javascript NodeJS
+categories: misc 
 lang: fr
 ref: about
 ---
-ceci est le about en francais.
+Je suis 
 
 ```javascript
 const Razorpay = require('razorpay');
