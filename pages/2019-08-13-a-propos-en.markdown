@@ -6,7 +6,7 @@ categories: misc
 lang: en
 ref: about
 ---
-## Hey you, I'm Cyril.  
+## Hey, I'm Cyril.  
 
 I'm a machine learning engineer at [AB Tasty][abtasty]. 
 CS and NLP engineer by education, I am based in Paris.     

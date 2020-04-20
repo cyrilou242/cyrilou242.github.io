@@ -6,12 +6,12 @@ categories: misc
 lang: fr
 ref: about
 ---
-## Salut toi, moi c'est Cyril.  
+## Salut, moi c'est Cyril.  
 
 Je suis ingénieur en traitement de données et apprentissage automatique chez [AB Tasty][abtasty]. 
 Informaticien spécialisé en TAL de Centrale Nantes, je suis basé à Paris.  
 Mes sujets d'intérêts en TAL sont la modélisation de language, l'étude de similarité sémantique, 
-la désambiguïsation lexicale et la régularisation de modèles par création de données textuelles synthétiques.     
+la désambiguïsation lexicale et la régularisation de modèles par génération de données synthétiques.     
 En matière d'ingénierie, je m'intéresse surtout aux service de décisions automatiques, 
 à la création de platforme de bandits contextuels, à l'apprentissage incrémental 
 et aux flux de données distribués temps réels. 
@@ -34,16 +34,63 @@ Une question, un projet, envie de discuter ?
   - [Github][github] 
   - [Linkedin][linkedin]
   - directement à `cdecatheu` sur google mail. 
-  
+
+
 <details><summary>Mentions légales</summary>
 <p>
-hello
+### Responsable de traitement  
+Le responsable de traitement du site [catheu.tech][catheu] est:
+  
+    Cyril de Catheu
+    19 rue Tiphaine
+    75015 Paris, FRANCE
+
+Tel: zero six 84 82 99 08  
+Mail: google mail -> cdecatheu
+
+### Hébergement
+Le site est hébergé par la société GitHub, Inc.
+    
+    GitHub, Inc.
+    88 Colin P Kelly Jr Street 
+    San Francisco, CA 94107 United States
+    
+La société GitHub, Inc. est joignable à l’adresse legal@support.github.com.  
+
+### Mentions relatives à l’utilisation des cookies
+Un cookie est un petit fichier informatique qui permet d’analyser le 
+comportement des usagers lors de la visite d’un site internet ou de l’utilisation 
+d’un logiciel ou d’une application mobile.
+
+catheu.tech utilise Google Analytics. Il s’agit d’un service d’analyse Web fourni par:
+
+    Google Inc.
+    1600 Amphitheatre Parkway
+    Mountain View, CA 94043
+    USA
+
+Grâce à la certification du bouclier de protection des données UE-États-Unis 
+[Privacy Shield][privacy-us], 
+Google garantit qu’il suit les réglementations de l’UE en matière de protection des données 
+lors du traitement des données aux États-Unis. Le service Google Analytics est utilisé pour 
+analyser l’utilisation du site catheu.tech. L’intérêt légitime réside dans l’analyse, l’optimisation 
+et le fonctionnement du site [catheu.tech][catheu].
+
+Google propose un module complémentaire de désactivation 
+à l'adresse suivante: [https://tools.google.com/dlpage/gaoptout?hl=en][no-ga]. 
+Ce module complémentaire peut être installé sur les navigateurs les plus populaires 
+et vous offre un contrôle supplémentaire sur les données que Google recueille lorsque vous 
+visitez [catheu.tech][catheu].
+
 </p>
 </details>
 
+[catheu]:     http://catheu.tech/
 [abtasty]:    https://www.abtasty.com/
 [linkedin]:   https://www.linkedin.com/in/cyril-de-catheu/
 [github]:     https://github.com/cyrilou242
 [strava]:     https://www.strava.com/athletes/14548186
 [dltc-spoti]: https://open.spotify.com/episode/0GzZoocBsk5BgNc3BshXAS
 [dltc-apple]: https://podcasts.apple.com/fr/podcast/dans-la-t%C3%AAte-dun-coureur/id1444365160
+[no-ga]:      https://tools.google.com/dlpage/gaoptout?hl=en
+[privacy-us]: https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&status=Active
