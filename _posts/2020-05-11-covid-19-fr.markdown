@@ -8,7 +8,7 @@ ref: covid1
 ---
 J'ai participé à la traduction du super article de [nicky case][nicky] sur le covid.   
 Vous pourrez voir, comprendre et réaliser tout plein de simulations épidémiologiques !   
-[Ça se passe par ici !][covid]
+[**Ça se passe par ici !**][covid]
 
 
 [covid]:       https://catheu.tech/covid-19
