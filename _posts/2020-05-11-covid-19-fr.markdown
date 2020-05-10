@@ -10,6 +10,14 @@ J'ai participé à la traduction du super article de [nicky case][nicky] sur le 
 Vous pourrez voir, comprendre et réaliser tout plein de simulations épidémiologiques !   
 [**Ça se passe par ici !**][covid]
 
+Nous avons traduit et relus à 8. Le groupe s'est formé naturellement sur [le projet Github][git-covid]. Beaucoup de suisses et un canadien ont participé, ce qui en fait une traduction *francophone* au sens large ! Ce que je retiens des traductions amateurs sur github:
+- les gens ne seront jamais d'accord sur certaines traductions.
+- ne pas faire le project management dans un fichier versionné.
+- pour traduire de l'anglais, il ne suffit pas d'être bon en anglais. Il faut aussi être bon en français. (l'anglais utilisé était très simple)
+- plus une personne arrive tard, moins elle a de chance de proposer une traduction en phase avec les traductions précédentes. 
+- les petites PR donnent une grosse charge de travail en version control management pour peu de gains projet. Note pour moi même: arrêter de faire des PR à tout va sur github pour corriger 2 fautes d'orthographes.  
+
 
 [covid]:       https://catheu.tech/covid-19
 [nicky]:       https://ncase.me/
+[git-covid]:   https://github.com/cyrilou242/covid-19
