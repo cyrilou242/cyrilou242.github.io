@@ -24,7 +24,8 @@ sur les méthodes d'ingénierie de données et d'apprentissage automatique moder
 C'est tout à fait flagrant pour les logiciels open source et 
 les applications "monde réel" de nouvelles technologies.
 J'espère par ce blog aider à déveloper les communautés ML et NLP 
-francophones, sinon tout au moins apporter un peu de contenu technique en francais sur le web.          
+francophones, sinon tout au moins apporter un peu de contenu technique en francais sur le web.
+*Oui il n'y a pas d'article pour le moment. J'ai du sortir ça en vitesse pour l'article sur le [COVID-19][covid].*          
 
 En dehors de l'informatique, je suis coureur de fond au Stade Français. Ce blog n'abordera jamais 
 le sujet de l'athlétisme, mais vous pouvez me trouver sur [Strava][strava] ou écouter 
@@ -85,7 +86,7 @@ visitez [catheu.tech][catheu].
 </p>
 </details>
 
-[catheu]:     http://catheu.tech/
+[catheu]:     https://catheu.tech/
 [abtasty]:    https://www.abtasty.com/
 [linkedin]:   https://www.linkedin.com/in/cyril-de-catheu/
 [github]:     https://github.com/cyrilou242
@@ -94,3 +95,4 @@ visitez [catheu.tech][catheu].
 [dltc-apple]: https://podcasts.apple.com/fr/podcast/dans-la-t%C3%AAte-dun-coureur/id1444365160
 [no-ga]:      https://tools.google.com/dlpage/gaoptout?hl=en
 [privacy-us]: https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&status=Active
+[covid]:      https://catheu.tech/covid-19/
