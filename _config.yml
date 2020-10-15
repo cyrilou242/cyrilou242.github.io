@@ -15,6 +15,7 @@ sass:
 plainwhite:
   disqus_shortname: catheu-tech
   analytics_id: 'UA-143787397-1'
+  abtasty_id: '7a023c31c439e5bb4d32811325ee2e1e'
   name: Cyril de Catheu
   date_format: "%-d %b %Y"
   sitemap: true # set to true to generate sitemap.xml content
