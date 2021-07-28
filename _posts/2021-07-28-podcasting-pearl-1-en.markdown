@@ -6,7 +6,7 @@ categories: podcast
 lang: en
 ref: pearl1
 ---
-Product management: deciding what to build, what to prioritize, and what to avoid.  
+Product Management: deciding what to build, what to prioritize, and what to avoid.  
 <iframe src="https://embed.podcasts.apple.com/us/podcast/feature-requests-arent-demand/id1482854819?i=1000452819431&amp;itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=light" height="175px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *;" style="width: 100%; max-width: 660px; overflow: hidden; border-radius: 10px; background: transparent;"></iframe>
 
 The closer we get to identifying **DEMAND** (what people want from our product), the better we feel. 
