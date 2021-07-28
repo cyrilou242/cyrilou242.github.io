@@ -8,3 +8,11 @@ My blog based on the following jekyll theme:
 
 ## License
 MIT
+
+
+## Run
+
+```
+    bundle install
+    bundle exec jekyll serve
+```
