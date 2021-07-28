@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Podcasting Pearl #1: Feature requests aren't demand."
-date:   2020-05-11 07:32:36 +0530
+date:   2021-04-12 07:32:36 +0530
 categories: podcast
 lang: en
 ref: pearl1
@@ -20,7 +20,7 @@ Misinterpreting an idea as demand can lead to building an expensive feature that
 - Think and search about **WHEN**:  
 Get the context of the problem. Don't focus on the WHY or the WHAT (feature request), focus on how it happened.
 
-**Example:**  
+**Story:**  
 A clients wants permission management.    
 Bad: start user research and needs collection for permission management.  
 Good: understand when the problem surfaced.  
