@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Podcasting Pearl #3: The curse of the black lotus."
+title:  "Podcasting Pearl #3: The curse of the Black Lotus."
 date:   2021-04-15 07:32:36 +0530
 categories: podcast
 lang: en
