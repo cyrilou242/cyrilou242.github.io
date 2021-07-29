@@ -6,7 +6,7 @@ categories: misc
 lang: en
 ref: podcasting-pearls
 ---
-## Purpose  
+## Podcasting pearls ✨
 
 Podcasts are going through a boom. 
 Independent, professionals, tech, marketing, sales, radios, 

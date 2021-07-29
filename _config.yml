@@ -1,8 +1,8 @@
 title: catheu.tech
 author: Cyril de Catheu
 email: cdecatheu@gmail.com
-lang: fr
-languages: ["en", "fr"]
+lang: en
+languages: ["en"]
 description: I write about NLP and machine learning in data intensive contexts. In French.
 show_excerpts: true # set to true to show excerpts on the homepage
 url: http://catheu.tech
@@ -43,12 +43,6 @@ t:
     home:
       name: "Home"
       url: "/index-en.html"
-
-  fr:
-    tagline: "Ingénieur ML"
-    home:
-      name: "Accueil"
-      url: "/"
 
 # Build settings
 theme: plainwhite

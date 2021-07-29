@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "BIO"
-date:   2019-08-13 21:03:36 +0530
+date:   2021-07-29 19:03:36 +0530
 categories: misc 
 lang: fr
 ref: about
