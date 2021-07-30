@@ -21,3 +21,15 @@ You can find podcast articles titled "Podcasting Pearls #...", it's a reference 
 There is a mix of engineering, economics, psychology, but you should mostly expect data engineering.     
 Good listening ! 
 
+
+**List of podcasting pearls:**
+<ul>
+  {% for post in site.posts %}
+    {% if post.title contains 'Podcasting Pearl' %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+

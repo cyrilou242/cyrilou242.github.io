@@ -6,7 +6,9 @@ categories: podcast
 lang: en
 ref: pearl3
 ---
-DB engineering: ClickHouse: open-source, column oriented DB  engine.  
+DB engineering: ClickHouse: open-source, column oriented DB  engine.
+<iframe src="https://open.spotify.com/embed/episode/7zak3WAkcXZ0dlZaHvVLS4" width="100%" style="max-width:660px" height="152" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>  
+
 <iframe src="https://embed.podcasts.apple.com/us/podcast/scale-your-analytics-on-the-clickhouse-data-warehouse/id1193040557?i=1000443943650&amp;itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=light" height="175px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *;" style="width: 100%; max-width: 660px; overflow: hidden; border-radius: 10px; background: transparent;"></iframe>
 
 **Disclaimer**:
