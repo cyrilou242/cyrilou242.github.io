@@ -16,3 +16,6 @@ MIT
     bundle install
     bundle exec jekyll serve
 ```
+
+## Podcast 
+To get embed from Apple: https://tools.applemediaservices.com/

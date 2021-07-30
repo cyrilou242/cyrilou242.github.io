@@ -4,7 +4,7 @@ title:  "Podcasting Pearl #5: Humor Us."
 date:   2021-04-27 07:32:36 +0530
 categories: podcast
 lang: en
-ref: pearl3
+ref: pearl5
 ---
 Psychology: this podcast made me smile.
 <iframe src="https://open.spotify.com/embed/episode/2EVHnuJokDe0oPAM8eUryU" width="100%" style="max-width:660px" height="152" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
@@ -31,6 +31,4 @@ We stop trying to have humor around 25. This is highly correlated with work.
 Don't be professional:
 - act professional
 - **be human**  
-
-
-[spotify]: 2EVHnuJokDe0oPAM8eUryU 
+ 
