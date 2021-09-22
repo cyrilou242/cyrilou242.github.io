@@ -34,5 +34,3 @@ fields:
 - type: text
   name: ref
   label: ref
-pages:
-- _posts/this-is-a-test-of-my-new-cms.md
