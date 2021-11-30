@@ -12,7 +12,7 @@ published: false
 ---
 ## Git cmds.
 
-Git commands and workflows I use a lot.
+Git commands I use a lot.
 
 ### Cleanup before a merge request
 
@@ -40,3 +40,16 @@ Do: create new commits
     git cherry-pick <SHA-1>
 
 Use `--no-commit`  or `-n` to pick the change without committing. 
+
+### Quick stash
+
+`--autostash` works with most of the commands.
+
+Does not work with checkout, so: 
+
+    git stash && git fetch && git checkout my_branch && git stash pop
+
+#### Download a single file
+
+    git fetch --all
+    git checkout origin/myBranch -- my/file.cpp
