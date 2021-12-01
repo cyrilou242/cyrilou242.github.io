@@ -7,7 +7,6 @@ categories:
 - git
 lang: en
 ref: git
-published: false
 
 ---
 ## Git cmds.
