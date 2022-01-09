@@ -34,16 +34,14 @@ ref: links
 
 ### Fictions
 
-* [_Brave New World_](https://www.goodreads.com/book/show/5129.Brave_New_World) - Aldous Huxley
-  A totalitarian regime with Western methods.
+* [_Brave New World_](https://www.goodreads.com/book/show/5129.Brave_New_World) - Aldous Huxley A totalitarian regime with Western methods.
 * [_1984_](https://www.goodreads.com/book/show/40961427-1984?from_search=true&from_srp=true&qid=zY0FCMwHcw&rank=1) - George Orwell  
   A totalitarian regime with Eastern methods.
-* [_The Robot series_](https://www.goodreads.com/book/show/41804.I_Robot?from_search=true&from_srp=true&qid=6G5binNbho&rank=1) - Isaac Asimov
-  The beginning of the Robot series is actually about debugging automatons. Kinda like post-mortems stories.
+* [_The Robot series_](https://www.goodreads.com/book/show/41804.I_Robot?from_search=true&from_srp=true&qid=6G5binNbho&rank=1) - Isaac Asimov The beginning of the Robot series is actually about debugging automatons. Kinda like post-mortems stories.
 
 ### Non-fictions
 
-* [_The Culture of Narcissism: American Life in An Age of Diminishing Expectations_](https://www.goodreads.com/book/show/38212112-the-culture-of-narcissism?from_search=true&from_srp=true&qid=0gJHo8AKXV&rank=1) - Christopher Lasch "Narcissism, not only as an individual ailment, but also as a burgeoning social epidemic".
+* [_The Culture of Narcissism: American Life in An Age of Diminishing Expectations_](https://www.goodreads.com/book/show/38212112-the-culture-of-narcissism?from_search=true&from_srp=true&qid=0gJHo8AKXV&rank=1) - Christopher Lasch "Narcissism, not only as an individual ailment but also as a burgeoning social epidemic".
 * [_The Presentation of Self in Everyday Life_](https://www.goodreads.com/book/show/931984.The_Presentation_of_Self_in_Everyday_Life?from_search=true&from_srp=true&qid=oj77vP9xfB&rank=1) - Erving Goffman Human behavior in social situations.
 * [_The Sense of Style_](https://www.goodreads.com/book/show/20821371-the-sense-of-style?from_search=true&from_srp=true&qid=9kYYA7O5Jr&rank=1) - Steven Pinker How to write well.
 
@@ -57,6 +55,8 @@ ref: links
   Exceptionally well-documented graphical document about the tobacco business in all its aspects: historical, economic, marketing, medical, political, environmental. Eye-opening.
 * [_Il faut flinguer Ramirez_](https://www.goodreads.com/book/show/40390595-il-faut-flinguer-ramirez) - Nicolas Petrimaux  
   Modern French comic. Makes fun of American film productions of a certain epoch, with nice humor and impactful arts.
+* [Le monde sans fin](https://www.goodreads.com/book/show/59478153-le-monde-sans-fin "Le monde sans fin") - Christophe Blain (Illustrator), Jean-Marc Jancovici  
+  Jancovici is a famous figure in France. He works on global warming causes and solutions. This comic is an easy read that gives a cohesive view of the problem.
 
 ### US Comics
 
