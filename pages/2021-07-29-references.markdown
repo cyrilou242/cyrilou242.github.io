@@ -21,6 +21,8 @@ ref: links
   Foundations of distributed computing for streaming. Starting with [101](https://www.oreilly.com/radar/the-world-beyond-batch-streaming-101/) and [102](https://www.oreilly.com/radar/the-world-beyond-batch-streaming-102/) is enough.
 * [Code Complete](https://www.goodreads.com/book/show/4845.Code_Complete) - Steve McConnell  
   Decades of trenches knowledge distilled. Reading this book instantaneously makes you a better developer.
+* [Refactoring](https://www.goodreads.com/book/show/44936.Refactoring "Refactoring") - Martin Fowler  
+  I didn't like this book at first. I found it way too verbose and procedural. Important ideas tend to be hidden by useless repetitive explanations. Still, I cant' deny it had a major impact on how I approach changes in big codebases.
 * [_Concurrency in practice_](https://www.goodreads.com/book/show/127932.Java_Concurrency_in_Practice) - Brian Goetz, Tim Peierls, Joshua Bloch, Joseph Bowbeer, David Holmes, Doug Lea  
   Threads are tricky. Used as a reference.
 * [_Artificial Intelligence: A Modern Approach,_](http://aima.cs.berkeley.edu/) - Stuart Russell, Peter Norvig  
