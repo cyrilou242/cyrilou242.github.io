@@ -11,7 +11,7 @@ ref: git
 ---
 ## Git cmds.
 
-Git commands I use a lot.
+Personal note. Git commands I use a lot. 
 
 ### Cleanup before a merge request
 
@@ -20,7 +20,9 @@ Git commands I use a lot.
     git rebase -i HEAD~3 
 
 Effect: rerun the 3 last commits.  
-Do: follow the interactive indication. 
+Do: follow the interactive indication.  
+Prefer `fixup` to `stash` to put one minor commit into another.  
+Prefer `--force-with-lease` to `--force` when pushing.
 
 #### Rewrite commits
 
@@ -38,13 +40,13 @@ Do: create new commits
 
     git cherry-pick <SHA-1>
 
-Use `--no-commit`  or `-n` to pick the change without committing. 
+Use `--no-commit`  or `-n` to pick the change without committing.
 
 ### Quick stash
 
 `--autostash` works with most of the commands.
 
-Does not work with checkout, so: 
+Does not work with checkout, so:
 
     git stash && git fetch && git checkout my_branch && git stash pop
 
