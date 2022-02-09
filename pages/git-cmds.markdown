@@ -9,15 +9,15 @@ lang: en
 ref: git
 
 ---
-## Git cmds.
+## SNPTS
 
-Personal note. Git commands I use a lot. 
+Things I use but forget a lot.
 
 ### Cleanup before a merge request
 
 #### Squash commits (interactive)
 
-    git rebase -i HEAD~3 
+    git rebase -i HEAD~3 --autostash
 
 Effect: rerun the 3 last commits.  
 Do: follow the interactive indication.  
@@ -54,3 +54,45 @@ Does not work with checkout, so:
 
     git fetch --all
     git checkout origin/myBranch -- my/file.cpp
+
+### Bash
+
+[See the official doc for more.](https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html)
+
+#### getValue or default
+
+    ${MY_VAR:-"default_value"}
+
+#### getValue or default and set
+
+If MY_VAR is not set, it is set to the right side.
+
+    ${MY_VAR:="default_value"}
+
+#### Expand if not empty else nothing
+
+Expand the right if left is set and non-empty. Otherwise expands to nothing
+
+    ${MY_VAR:+"$MY_VAR"}
+
+#### Slice
+
+    string=01234567890abcdefgh
+    echo ${string:7}
+    >>> 7890abcdefgh
+    echo ${string:7:2}
+    >>> 78
+    echo ${string:7:-2}
+    >>> 7890abcdef
+    echo ${string: -7}
+    >>> bcdefgh
+    $ echo ${string: -7:2}
+    bc
+    $ echo ${string: -7:-2}
+    bcdef
+
+#### Get the length of a variable
+
+    ${#VAR}
+
+\--
