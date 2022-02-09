@@ -1,47 +1,29 @@
 ---
 layout: page
-title:  "BIO"
-date:   2021-07-29 19:03:36 +0530
-categories: misc 
+title: BIO
+date: 2021-07-29T19:03:36.000+05:30
+categories: misc
 lang: fr
 ref: about
+
 ---
-## Salut, moi c'est Cyril.  
+## Salut, moi c'est Cyril.
 
-Je suis ingénieur en traitement de données et apprentissage automatique chez [AB Tasty][abtasty]. 
-Informaticien spécialisé en TAL de Centrale Nantes, je suis basé à Paris.  
-Mes sujets d'intérêts en TAL sont la modélisation de language, l'étude de similarité sémantique, 
-la désambiguïsation lexicale et la régularisation de modèles par génération de données synthétiques.     
-En matière d'ingénierie, je m'intéresse surtout aux service de décisions automatiques, 
-à la création de platforme de bandits contextuels, à l'apprentissage incrémental 
-et aux flux de données distribués temps réels. 
-
-Ce blog est né d'une certaine lassitude de la recherche en TAL, sérieusement biaisée 
-par la prédominance des deux langues les plus parlées dans le monde que sont l'anglais et le mandarin. 
-Ce qui est un problème fondamental pour une discipline qui étudie des langues est aussi un problème 
-plus général pour l'informatique francophone: il n'existe quasiment aucune resource en français 
-sur les méthodes d'ingénierie de données et d'apprentissage automatique modernes. 
-C'est tout à fait flagrant pour les logiciels open source et 
-les applications "monde réel" de nouvelles technologies.
-J'espère par ce blog aider à déveloper les communautés ML et NLP 
-francophones, sinon tout au moins apporter un peu de contenu technique en francais sur le web.
-*Oui il n'y a pas d'article pour le moment. J'ai du sortir ça en vitesse pour l'article sur le [COVID-19][covid].*          
-
-En dehors de l'informatique, je suis coureur de fond au Stade Français. Ce blog n'abordera jamais 
-le sujet de l'athlétisme, mais vous pouvez me trouver sur [Strava][strava] ou écouter 
-mon entraineur sur [Spotify][dltc-spoti] ou [Apple podcast][dltc-apple].
+_Oui il n'y a pas d'article pour le moment. J'ai du sortir ça en vitesse pour l'article sur le_ [_COVID-19_](https://catheu.tech/covid-19/)_. La page en anglais devrait être plus à jour._
 
 Une question, un projet, envie de discuter ?
-  - [Github][github] 
-  - [Linkedin][linkedin]
-  - directement à `cdecatheu` sur google mail. 
 
+* [Github](https://github.com/cyrilou242)
+* [Linkedin](https://www.linkedin.com/in/cyril-de-catheu/)
+* directement à `cdecatheu` sur google mail.
 
 <details><summary>Mentions légales</summary>
 <p>
-### Responsable de traitement  
-Le responsable de traitement du site [catheu.tech][catheu] est:
-  
+
+### Responsable de traitement
+
+Le responsable de traitement du site [catheu.tech](https://catheu.tech/) est:
+
     Cyril de Catheu
     19 rue Tiphaine
     75015 Paris, FRANCE
@@ -50,17 +32,19 @@ Tel: zero six 84 82 99 08
 Mail: google mail -> cdecatheu
 
 ### Hébergement
+
 Le site est hébergé par la société GitHub, Inc.
-    
+
     GitHub, Inc.
     88 Colin P Kelly Jr Street 
     San Francisco, CA 94107 United States
-    
-La société GitHub, Inc. est joignable à l’adresse legal@support.github.com.  
+
+La société GitHub, Inc. est joignable à l’adresse legal@support.github.com.
 
 ### Mentions relatives à l’utilisation des cookies
-Un cookie est un petit fichier informatique qui permet d’analyser le 
-comportement des usagers lors de la visite d’un site internet ou de l’utilisation 
+
+Un cookie est un petit fichier informatique qui permet d’analyser le
+comportement des usagers lors de la visite d’un site internet ou de l’utilisation
 d’un logiciel ou d’une application mobile.
 
 catheu.tech utilise Google Analytics. Il s’agit d’un service d’analyse Web fourni par:
@@ -70,29 +54,18 @@ catheu.tech utilise Google Analytics. Il s’agit d’un service d’analyse Web
     Mountain View, CA 94043
     USA
 
-Grâce à la certification du bouclier de protection des données UE-États-Unis 
-[Privacy Shield][privacy-us], 
-Google garantit qu’il suit les réglementations de l’UE en matière de protection des données 
-lors du traitement des données aux États-Unis. Le service Google Analytics est utilisé pour 
-analyser l’utilisation du site catheu.tech. L’intérêt légitime réside dans l’analyse, l’optimisation 
-et le fonctionnement du site [catheu.tech][catheu].
+Grâce à la certification du bouclier de protection des données UE-États-Unis
+[Privacy Shield](https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&status=Active),
+Google garantit qu’il suit les réglementations de l’UE en matière de protection des données
+lors du traitement des données aux États-Unis. Le service Google Analytics est utilisé pour
+analyser l’utilisation du site catheu.tech. L’intérêt légitime réside dans l’analyse, l’optimisation
+et le fonctionnement du site [catheu.tech](https://catheu.tech/).
 
-Google propose un module complémentaire de désactivation 
-à l'adresse suivante: [https://tools.google.com/dlpage/gaoptout?hl=en][no-ga]. 
-Ce module complémentaire peut être installé sur les navigateurs les plus populaires 
-et vous offre un contrôle supplémentaire sur les données que Google recueille lorsque vous 
-visitez [catheu.tech][catheu].
+Google propose un module complémentaire de désactivation
+à l'adresse suivante: [https://tools.google.com/dlpage/gaoptout?hl=en](https://tools.google.com/dlpage/gaoptout?hl=en).
+Ce module complémentaire peut être installé sur les navigateurs les plus populaires
+et vous offre un contrôle supplémentaire sur les données que Google recueille lorsque vous
+visitez [catheu.tech](https://catheu.tech/).
 
 </p>
 </details>
-
-[catheu]:     https://catheu.tech/
-[abtasty]:    https://www.abtasty.com/
-[linkedin]:   https://www.linkedin.com/in/cyril-de-catheu/
-[github]:     https://github.com/cyrilou242
-[strava]:     https://www.strava.com/athletes/14548186
-[dltc-spoti]: https://open.spotify.com/episode/0GzZoocBsk5BgNc3BshXAS
-[dltc-apple]: https://podcasts.apple.com/fr/podcast/dans-la-t%C3%AAte-dun-coureur/id1444365160
-[no-ga]:      https://tools.google.com/dlpage/gaoptout?hl=en
-[privacy-us]: https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&status=Active
-[covid]:      https://catheu.tech/covid-19/
