@@ -1,6 +1,6 @@
 ---
 layout: page
-title: GIT CMDS
+title: SNPTS
 date: 2020-04-24T12:00:00.000+05:30
 categories:
 - misc
