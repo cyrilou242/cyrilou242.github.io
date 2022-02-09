@@ -11,7 +11,7 @@ ref: git
 ---
 ## SNPTS
 
-Things I use but forget a lot.
+Things I use but often forget.
 
 ### Cleanup before a merge request
 
