@@ -57,7 +57,23 @@ Does not work with checkout, so:
 
 ### Bash
 
-[See the official doc for more.](https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html)
+#### Files with details
+
+    ls -hal
+
+#### Change permissions
+
+[More permissions here.](https://linuxhint.com/linux_file_permissions/ "More permissions")
+
+    chmod -R MODE DIRECTORY
+
+    chmod -R 755 /var/www/html
+
+MODE in octal notation is handy but cannot do incremental change.
+
+    chmod +x my script.sh
+
+[See the official doc for more variable expansion.](https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html)
 
 #### getValue or default
 
