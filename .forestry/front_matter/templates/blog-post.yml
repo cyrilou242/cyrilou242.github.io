@@ -36,3 +36,4 @@ fields:
   label: ref
 pages:
 - _posts/raspberry-pi-grafana-en-https-avec-let-s-encrypt.md
+- _posts/test.md
