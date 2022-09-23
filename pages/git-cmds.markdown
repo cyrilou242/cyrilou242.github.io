@@ -66,7 +66,7 @@ Does not work with checkout, so:
 [More permissions here.](https://linuxhint.com/linux_file_permissions/ "More permissions")
 
     chmod -R MODE DIRECTORY
-
+    
     chmod -R 755 /var/www/html
 
 MODE in octal notation is handy but cannot do incremental change.
@@ -110,5 +110,23 @@ Expand the right if left is set and non-empty. Otherwise expands to nothing
 #### Get the length of a variable
 
     ${#VAR}
+
+### Maven
+
+#### Find unused dependencies
+
+    ./mvnw dependency:analyze
+
+If the dependency is not used at compile time, the plugin will state a dependency is not used. To mark a dependency as used: 
+
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <configuration>
+            <usedDependencies>
+                <dependency>commons-collections:commons-collections</dependency>
+            </usedDependencies>
+        </configuration>
+    </plugin>
 
 \--
