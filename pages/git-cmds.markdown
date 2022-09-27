@@ -117,7 +117,7 @@ Expand the right if left is set and non-empty. Otherwise expands to nothing
 
     ./mvnw dependency:analyze
 
-If the dependency is not used at compile time, the plugin will state a dependency is not used. To mark a dependency as used: 
+If the dependency is not used at compile time, the plugin will state a dependency is not used. To mark a dependency as used:
 
     <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -128,5 +128,11 @@ If the dependency is not used at compile time, the plugin will state a dependenc
             </usedDependencies>
         </configuration>
     </plugin>
+
+#### Find dependency conflicts
+
+    ./mvnw dependency:tree -Dverbose -Dincludes=org.eclipse.jetty:::
+
+Use `includes` to filter.
 
 \--
