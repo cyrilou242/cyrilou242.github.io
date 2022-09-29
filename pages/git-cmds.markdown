@@ -135,4 +135,8 @@ If the dependency is not used at compile time, the plugin will state a dependenc
 
 Use `includes` to filter.
 
+### Links
+
+Check \[ANSI SQL conformance\]([https://developer.mimer.com/sql-2016-validator/](https://developer.mimer.com/sql-2016-validator/ "https://developer.mimer.com/sql-2016-validator/"))
+
 \--
