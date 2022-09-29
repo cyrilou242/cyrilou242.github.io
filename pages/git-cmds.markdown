@@ -137,6 +137,9 @@ Use `includes` to filter.
 
 ### Links
 
-Check \[ANSI SQL conformance\]([https://developer.mimer.com/sql-2016-validator/](https://developer.mimer.com/sql-2016-validator/ "https://developer.mimer.com/sql-2016-validator/"))
+Check ANSI SQL conformance:
+
+* \[2016\]([https://developer.mimer.com/sql-2016-validator/](https://developer.mimer.com/sql-2016-validator/ "https://developer.mimer.com/sql-2016-validator/"))
+* \[1999\]([https://developer.mimer.com/services/sql-99-validator/](https://developer.mimer.com/services/sql-99-validator/ "https://developer.mimer.com/services/sql-99-validator/"))
 
 \--
