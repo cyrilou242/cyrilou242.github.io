@@ -35,5 +35,6 @@ fields:
   name: ref
   label: ref
 pages:
+- _posts/podcasting-pearl-7-on-lisp-and-clojure.md
 - _posts/raspberry-pi-grafana-en-https-avec-let-s-encrypt.md
 - _posts/test.md
