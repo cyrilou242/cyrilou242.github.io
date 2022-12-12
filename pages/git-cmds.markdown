@@ -143,7 +143,7 @@ Use `includes` to filter.
 
 #### Run infer on maven project
 
-    infer -- ./mvnw clean package -DskipTests -Pdev
+    infer -- ./mvnw clean package -DskipTests
 
 ### Links
 
