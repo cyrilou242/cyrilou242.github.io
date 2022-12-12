@@ -129,6 +129,10 @@ If the dependency is not used at compile time, the plugin will state a dependenc
         </configuration>
     </plugin>
 
+#### Find dependency updates
+
+    ./mvnw versions:display-dependency-updates
+
 #### Find dependency conflicts
 
     ./mvnw dependency:tree -Dverbose -Dincludes=org.eclipse.jetty:::
