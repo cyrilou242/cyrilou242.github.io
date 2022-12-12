@@ -139,6 +139,12 @@ If the dependency is not used at compile time, the plugin will state a dependenc
 
 Use `includes` to filter.
 
+### Static Analysis
+
+#### Run infer on maven project
+
+    infer -- ./mvnw clean package -DskipTests -Pdev
+
 ### Links
 
 Check ANSI SQL conformance:
