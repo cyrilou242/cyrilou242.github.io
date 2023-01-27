@@ -145,6 +145,13 @@ Use `includes` to filter.
 
     infer -- ./mvnw clean package -DskipTests
 
+### JFR profiling
+
+For a short running process
+
+    -XX:StartFlightRecording=settings=profile,filename=test-run.jfr,dumponexit=true -XX:FlightRecorderOptions=stackdepth=128
+    
+
 ### Links
 
 Check ANSI SQL conformance:
