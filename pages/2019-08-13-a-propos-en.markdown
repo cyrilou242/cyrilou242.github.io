@@ -32,6 +32,7 @@ Any questions or projects, you can contact me through:
 
 ### Presentations
 
+* [High-frequency monitoring with ThirdEye]()
 * 🇫🇷 [Data quality: monitoring thousands of metrics with ThirdEye](https://docs.google.com/presentation/d/1pQf2tqOFRo6Zc-VMxQiFa3mJOFYWaOoisItGqmvUTJY/edit?usp=sharing)  
   Salon de la Data Nantes - 2021
 * 🇫🇷 🎧 Cloud costs - [An experiment gone wrong](https://podcast.ausha.co/postmortem/13)  
