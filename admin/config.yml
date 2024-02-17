@@ -1,0 +1,4 @@
+backend:
+  name: github
+  repo: cyrilou242/cyrilou242.github.io
+  branch: editor
