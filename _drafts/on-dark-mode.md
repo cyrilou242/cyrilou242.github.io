@@ -1,9 +1,9 @@
 ---
 title: On dark mode
-date: 2022-12-14 21:53:10 Z
-layout: post
+date: 2022-12-14 21:53:00 Z
 lang: en
-ref: ''
+ref: 
+layout: post
 ---
 
 points nobody discussed about why not using dark mode
@@ -47,3 +47,5 @@ Solution:
 I often have to do demoes. I don't use dark mode.  
 
 \- don't use both: it's not as easy to configure. It's very likely one app/one website will not respect choice without a bunch of config. You should not spend time on this.
+
+Lol test
