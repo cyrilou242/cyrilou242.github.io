@@ -1,11 +1,13 @@
 ---
+title: 'Podcasting Pearl #2: Turn big unknowns into focused projects.'
+date: 2021-04-14 02:02:36 Z
+categories:
+- podcast
 layout: post
-title:  "Podcasting Pearl #2: Turn big unknowns into focused projects."
-date:   2021-04-14 07:32:36 +0530
-categories: podcast
 lang: en
 ref: pearl2
 ---
+
 Product Management: working on the unknowns, understanding what *better* means, and building for it.
 <iframe src="https://open.spotify.com/embed/episode/0dqIYnJVxj8oT20ybI9fTX" width="100%" style="max-width:660px" height="152" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>  
 

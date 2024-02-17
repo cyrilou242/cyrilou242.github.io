@@ -1,11 +1,13 @@
 ---
+title: 'Podcasting Pearl #6: A Conversation with Ronny Kohavi.'
+date: 2021-07-30 02:02:36 Z
+categories:
+- podcast
 layout: post
-title:  "Podcasting Pearl #6: A Conversation with Ronny Kohavi."
-date:   2021-07-30 07:32:36 +0530
-categories: podcast
 lang: en
 ref: pearl6
 ---
+
 Online Experimentation: on trust, best practices and moving the needle.
 <iframe src="https://open.spotify.com/embed/episode/4d3Prnlc0VIf6dQSdWdGmb" width="100%" style="max-width:660px" height="152" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 

@@ -1,11 +1,13 @@
 ---
+title: 'Podcasting Pearl #4: Scale your analytics on the Clickhouse Data Warehouse.'
+date: 2021-04-26 02:02:36 Z
+categories:
+- podcast
 layout: post
-title:  "Podcasting Pearl #4: Scale your analytics on the Clickhouse Data Warehouse."
-date:   2021-04-26 07:32:36 +0530
-categories: podcast
 lang: en
 ref: pearl4
 ---
+
 DB engineering: ClickHouse: open-source, column oriented DB  engine.
 <iframe src="https://open.spotify.com/embed/episode/7zak3WAkcXZ0dlZaHvVLS4" width="100%" style="max-width:660px" height="152" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>  
 

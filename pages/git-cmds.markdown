@@ -1,14 +1,14 @@
 ---
-layout: page
 title: SNPTS
-date: 2020-04-24T12:00:00.000+05:30
+date: 2020-04-24 06:30:00 Z
+layout: page
 categories:
 - misc
 - git
 lang: en
 ref: git
-
 ---
+
 ## SNPTS
 
 Things I use but often forget.

@@ -1,11 +1,13 @@
 ---
+title: 'Podcasting Pearl #1: Feature requests aren''t demand.'
+date: 2021-04-12 02:02:36 Z
+categories:
+- podcast
 layout: post
-title:  "Podcasting Pearl #1: Feature requests aren't demand."
-date:   2021-04-12 07:32:36 +0530
-categories: podcast
 lang: en
 ref: pearl1
 ---
+
 Product Management: deciding what to build, what to prioritize, and what to avoid.
 <iframe src="https://open.spotify.com/embed/episode/5uPkUiyvW9cd0xeGmwfpUR" width="100%" style="max-width:660px" height="152" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>  
 

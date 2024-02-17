@@ -1,12 +1,11 @@
 ---
-layout: post
-date: 2022-12-14 21:53:10 +0000
-lang: en
 title: On dark mode
-categories: ''
+date: 2022-12-14 21:53:10 Z
+layout: post
+lang: en
 ref: ''
-
 ---
+
 points nobody discussed about why not using dark mode
 
 dark mode tends to 

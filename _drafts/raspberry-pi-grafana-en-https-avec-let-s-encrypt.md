@@ -1,12 +1,11 @@
 ---
-layout: post
-date: 2022-02-12T00:29:54.000+00:00
-lang: en
 title: Raspberry pi,  Grafana en https avec Let's Encrypt
-categories: ''
+date: 2022-02-12 00:29:54 Z
+layout: post
+lang: en
 ref: ''
-
 ---
+
 [https://martinjt.me/2021/03/13/grafana-on-azure-enabling-ssl-with-letsencrypt/](https://martinjt.me/2021/03/13/grafana-on-azure-enabling-ssl-with-letsencrypt/ "https://martinjt.me/2021/03/13/grafana-on-azure-enabling-ssl-with-letsencrypt/")
 
 mais faire le chmod correctement: en recursif, et après que le cerbot soit passé

@@ -1,12 +1,12 @@
 ---
-layout: page
 title: BIO
-date: 2021-07-29T19:03:36.000+05:30
+date: 2021-07-29 13:33:36 Z
+layout: page
 categories: misc
 lang: fr
 ref: about
-
 ---
+
 ## Salut, moi c'est Cyril.
 
 _Oui il n'y a pas d'article pour le moment. J'ai du sortir ça en vitesse pour l'article sur le_ [_COVID-19_](https://catheu.tech/covid-19/)_. La page en anglais devrait être plus à jour._

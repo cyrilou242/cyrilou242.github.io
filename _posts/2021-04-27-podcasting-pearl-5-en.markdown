@@ -1,12 +1,13 @@
 ---
-layout: post
 title: 'Podcasting Pearl #5: Humor Us.'
-date: 2021-04-27T07:32:36.000+05:30
-categories: podcast
+date: 2021-04-27 02:02:36 Z
+categories:
+- podcast
+layout: post
 lang: en
 ref: pearl5
-
 ---
+
 Psychology: this podcast made me smile.
 <iframe src="https://open.spotify.com/embed/episode/2EVHnuJokDe0oPAM8eUryU" width="100%" style="max-width:660px" height="152" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 

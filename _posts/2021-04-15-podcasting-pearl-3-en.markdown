@@ -1,11 +1,13 @@
 ---
+title: 'Podcasting Pearl #3: The curse of the Black Lotus.'
+date: 2021-04-15 02:02:36 Z
+categories:
+- podcast
 layout: post
-title:  "Podcasting Pearl #3: The curse of the Black Lotus."
-date:   2021-04-15 07:32:36 +0530
-categories: podcast
 lang: en
 ref: pearl3
 ---
+
 Economics: nurturing bubble markets.
 <iframe src="https://open.spotify.com/embed/episode/5mqPjox9VNyeeW8NjlHj5m" width="100%" style="max-width:660px" height="152" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>  
 

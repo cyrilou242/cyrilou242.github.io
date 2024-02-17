@@ -1,12 +1,12 @@
 ---
-layout: page
 title: GOOD READS
-date: 2020-04-24T12:00:00.000+05:30
+date: 2020-04-24 06:30:00 Z
+layout: page
 categories: misc
 lang: en
 ref: links
-
 ---
+
 ## La crème de la crème
 
 ### Academics and learning

@@ -1,11 +1,12 @@
 ---
+title: PODCASTING PEARLS
+date: 2019-08-13 15:33:36 Z
 layout: page
-title:  "PODCASTING PEARLS"
-date:   2019-08-13 21:03:36 +0530
 categories: misc
 lang: en
 ref: podcasting-pearls
 ---
+
 ## Podcasting pearls ✨
 
 Podcasts are going through a boom. 

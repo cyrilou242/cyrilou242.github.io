@@ -1,11 +1,13 @@
 ---
+title: Vous cherchez l'article sur le Covid-19 ?
+date: 2020-05-11 02:02:36 Z
+categories:
+- Opinion
 layout: post
-title:  "Vous cherchez l'article sur le Covid-19 ?"
-date:   2020-05-11 07:32:36 +0530
-categories: Opinion
 lang: fr
 ref: covid1
 ---
+
 J'ai participé à la traduction du super article de [nicky case][nicky] sur le covid.   
 Vous pourrez voir, comprendre et réaliser tout plein de simulations épidémiologiques !   
 [**Ça se passe par ici !**][covid]

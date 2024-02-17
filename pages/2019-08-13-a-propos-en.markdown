@@ -1,12 +1,12 @@
 ---
-layout: page
 title: BIO
-date: 2021-07-29T19:03:36.000+05:30
+date: 2021-07-29 13:33:36 Z
+layout: page
 categories: misc
 lang: en
 ref: about
-
 ---
+
 ## Hey, I'm Cyril.
 
 I'm a data engineer, currently at [AB Tasty](https://www.abtasty.com/).
