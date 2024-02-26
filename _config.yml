@@ -12,7 +12,7 @@ author: Cyril de Catheu
 email: cdecatheu@gmail.com
 lang: en
 languages:
-- en
+  - en
 description: Data engineering, podcasting pearls.
 show_excerpts: true
 url: http://catheu.tech
@@ -31,9 +31,8 @@ plainwhite:
     mapping: og:title
     strict: 1
     theme: preferred_color_scheme
-    lang: en 
+    lang: en
   social_links:
-    twitter: deCatheu
     github: cyrilou242
     linkedIn: in/cyril-de-catheu
   hypemachine:
@@ -49,5 +48,5 @@ t:
       url: "/index-en.html"
 theme: plainwhite
 plugins:
-- jekyll-seo-tag
-- jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-feed

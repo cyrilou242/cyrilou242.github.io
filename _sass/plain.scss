@@ -43,21 +43,21 @@ main {
 
 	@media screen and (min-width: $bigScreenW) {
 		margin: 0 auto;
-		max-width: 1440px;	
+		max-width: 1440px;
 	}
 	@media screen and (max-width: 1280px) {
-		margin: 0 75px;	
+		margin: 0 75px;
 	}
 	@media screen and (max-width: 1024px){
-		margin: 0 35px;	
+		margin: 0 35px;
 	}
 
 	@media screen and (max-width: $mobileW) {
 		margin: 0 10px;
-		flex-direction: column;	
+		flex-direction: column;
 	}
 	@media screen and (max-width: $smallMobileW) {
-		margin: 0;	
+		margin: 0;
 	}
 
 	.content {
@@ -164,7 +164,7 @@ main {
 		margin-right: 20px;
 	}
 	@media screen and (max-width: $mobileW){
-		padding: 0 !important;	
+		padding: 0 !important;
 		margin-top: 0;
 	}
 }
