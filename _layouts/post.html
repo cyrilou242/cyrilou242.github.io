@@ -18,20 +18,24 @@ layout: default
 <div class="post">
 	{{ content }}
 </div>
-{%- if site.plainwhite.disqus_shortname -%}
-<div id="disqus_thread" style="margin-top:25px"></div>
-  <script>
-    var disqus_config = function () {
-      this.page.url = '{{ page.url | absolute_url }}';
-      this.page.identifier = '{{ page.url | absolute_url }}';
-    };
-    (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://{{ site.plainwhite.disqus_shortname }}.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+{%- if site.plainwhite.giscus.repo -%}
+<div id="giscus_thread" style="margin-top:25px"></div>
+	<script src="https://giscus.app/client.js"
+					data-repo="{{ site.plainwhite.giscus.repo }}"
+					data-repo-id="{{ site.plainwhite.giscus.repo_id }}"
+					data-category="{{ site.plainwhite.giscus.category }}"
+					data-category-id="{{ site.plainwhite.giscus.category_id }}"
+					data-mapping="{{ site.plainwhite.giscus.mapping }}"
+					data-strict="{{ site.plainwhite.giscus.strict }}"
+					data-reactions-enabled="1"
+					data-emit-metadata="0"
+					data-input-position="top"
+					data-theme="{{ site.plainwhite.giscus.theme }}"
+					data-lang="{{ site.plainwhite.giscus.lang }}"
+					data-loading="lazy"
+					crossorigin="anonymous"
+					async>
+	</script>
+  <noscript>Please enable JavaScript to view the comments.</noscript>
 </div>
 {%- endif -%}

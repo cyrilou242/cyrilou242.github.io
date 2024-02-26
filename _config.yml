@@ -19,12 +19,19 @@ url: http://catheu.tech
 sass:
   sass_dir: _sass
 plainwhite:
-  disqus_shortname: catheu-tech
   analytics_id: UA-143787397-1
-  abtasty_id: 7a023c31c439e5bb4d32811325ee2e1e
   name: Cyril de Catheu
   date_format: "%-d %b %Y"
   sitemap: true
+  giscus:
+    repo: cyrilou242/cyrilou242.github.io
+    repo_id: MDEwOlJlcG9zaXRvcnkxOTY2NDE0NzQ=
+    category: "Blog comments"
+    category_id: DIC_kwDOC7iCws4CdhQL
+    mapping: og:title
+    strict: 1
+    theme: preferred_color_scheme
+    lang: en 
   social_links:
     twitter: deCatheu
     github: cyrilou242
