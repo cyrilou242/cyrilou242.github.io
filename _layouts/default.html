@@ -47,6 +47,7 @@
 		<section class="content">
 			<header class="header">
 			<nav class="navbar">
+				<a class="navlink" href="/">HOME</a>
 				{% assign pages=site.pages | where:"lang", page.lang  %}
 				{%- for page in pages -%}
 				{%- if page.url contains "/pages" -%}
