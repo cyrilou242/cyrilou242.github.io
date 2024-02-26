@@ -8,9 +8,9 @@ lang: en
 ref: pearl2
 ---
 
-Product Management: working on the unknowns, understanding what *better* means, and building for it.
-<iframe src="https://open.spotify.com/embed/episode/0dqIYnJVxj8oT20ybI9fTX" width="100%" style="max-width:660px" height="152" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>  
+Working on the unknowns, understanding what *better* means, and building for it.
 
+<iframe src="https://open.spotify.com/embed/episode/0dqIYnJVxj8oT20ybI9fTX" width="100%" style="max-width:660px" height="152" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 <iframe src="https://embed.podcasts.apple.com/us/podcast/turn-big-unknowns-into-focused-projects/id1482854819?i=1000452819432&amp;itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=light" height="175px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *;" style="width: 100%; max-width: 660px; overflow: hidden; border-radius: 10px; background: transparent;"></iframe>
 
 

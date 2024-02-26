@@ -8,9 +8,9 @@ lang: en
 ref: pearl3
 ---
 
-Economics: nurturing bubble markets.
-<iframe src="https://open.spotify.com/embed/episode/5mqPjox9VNyeeW8NjlHj5m" width="100%" style="max-width:660px" height="152" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>  
+Nurturing bubble markets.
 
+<iframe src="https://open.spotify.com/embed/episode/5mqPjox9VNyeeW8NjlHj5m" width="100%" style="max-width:660px" height="152" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 <iframe src="https://embed.podcasts.apple.com/us/podcast/the-curse-of-the-black-lotus-update/id290783428?i=1000515224849&amp;itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=light" height="175px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *;" style="width: 100%; max-width: 660px; overflow: hidden; border-radius: 10px; background: transparent;"></iframe>
 
 Magic The Gathering always lives in a bubble.  
