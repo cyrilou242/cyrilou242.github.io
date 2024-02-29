@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link type="application/atom+xml" rel="alternate" href="http://catheu.tech/feed.xml" title="catheu.tech" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="shortcut icon" type="image/ico" href="/assets/favicon.ico"/>
+<title>SNPTS</title>
+<html lang="en">
+<script src="https://kit.fontawesome.com/cf713a3727.js"></script>
+<!-- Begin Jekyll SEO tag v2.1.0 -->
+<title>SNPTS - catheu.tech</title>
+<meta property="og:title" content="SNPTS" />
+<meta name="description" content="Data engineering, podcasting pearls." />
+<meta property="og:description" content="Data engineering, podcasting pearls." />
+<link rel="canonical" href="http://catheu.tech/pages/git-cmds.html" />
+<meta property="og:url" content="http://catheu.tech/pages/git-cmds.html" />
+<meta property="og:site_name" content="catheu.tech" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-04-24T06:30:00+00:00" />
+<script type="application/ld+json">
+{"@context": "http://schema.org",
+"@type": "BlogPosting",
+"headline": "SNPTS",
+"datePublished": "2020-04-24T06:30:00+00:00",
+"description": "Data engineering, podcasting pearls.",
+"url": "http://catheu.tech/pages/git-cmds.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+	<main class="container">
+		<section class="about">
+			<div class="absolute top-1 left">
+			<!-- multi language
+			-->
+      		<a href="/index-en.html" class="home"><i>CATHEU.TECH</i></a>
+    		</div>
+			<img src="/assets/portfolio.png" alt="Cyril de Catheu">
+			<h2>Cyril de Catheu</h2>
+			<p class="tagline">Data Engineer</p>
+			<ul class="social">
+				<a href="https://github.com/cyrilou242"><li><i class="icon-github-circled"></i></li></a>
+				<a href="https://www.linkedin.com/in/cyril-de-catheu"><li><i class="icon-linkedin-squared"></i></li></a>
+				<a type="application/atom+xml" href="/feed.xml"><li><i class="rssfeed fas fa-rss-square"></i></li></a>
+			</ul><a href="https://world.hey.com/cdecatheu" target="_blank">Newsletter</a><!-- mutli language
+			<ul class="social">
+				
+				
+				
+				
+						<a href="/pages/git-cmds.html" class="en">en</a>
+				
+			</ul>
+			--><div class="hypem">
+				<div id="hypem-widget"></div><script type="text/javascript" src="https://hypem.com/widget/v2/loved/
+				cyrilou242/6/hype.js?bcol=fef2eb&
+				tcol=ff4e47&
+				lcol=ff4e47"></script>
+			</div></section>
+		<section class="content">
+			<header class="header">
+			<nav class="navbar">
+				<a class="navlink" href="/">HOME</a>
+				<a class="navlink" href="/pages/2019-08-13-a-propos-en.html">BIO</a><a class="navlink" href="/pages/2021-07-28-podcasting-pearls-en.html">PODCASTING PEARLS</a><a class="navlink" href="/pages/2021-07-29-references.html">GOOD READS</a><a class="navlink" href="/pages/git-cmds.html">SNPTS</a></nav>
+			</header>
+			<div class="post-container">
+    <div class="post">
+        <h2 id="snpts">SNPTS</h2>
+
+<p>Things I use but often forget.</p>
+
+<h3 id="cleanup-before-a-merge-request">Cleanup before a merge request</h3>
+
+<h4 id="squash-commits-interactive">Squash commits (interactive)</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git rebase -i HEAD~3 --autostash
+</code></pre></div></div>
+
+<p>Effect: rerun the 3 last commits.<br />
+Do: follow the interactive indication.<br />
+Prefer <code class="highlighter-rouge">fixup</code> to <code class="highlighter-rouge">stash</code> to put one minor commit into another.<br />
+Prefer <code class="highlighter-rouge">--force-with-lease</code> to <code class="highlighter-rouge">--force</code> when pushing.</p>
+
+<h4 id="rewrite-commits">Rewrite commits</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git reset (--soft) HEAD~3
+</code></pre></div></div>
+
+<p>Effect: remove the last 3 commits, but keep the changes<br />
+use <em>–soft to</em> keep the changes in the staging area<br />
+Do: create new commits</p>
+
+<h4 id="change-last-commit-message">Change last commit message</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit --amend -m "New Message"
+</code></pre></div></div>
+
+<h3 id="cheery-pick-some-changes">Cheery pick some changes</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git cherry-pick &lt;SHA-1&gt;
+</code></pre></div></div>
+
+<p>Use <code class="highlighter-rouge">--no-commit</code>  or <code class="highlighter-rouge">-n</code> to pick the change without committing.</p>
+
+<h3 id="quick-stash">Quick stash</h3>
+
+<p><code class="highlighter-rouge">--autostash</code> works with most of the commands.</p>
+
+<p>Does not work with checkout, so:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git stash &amp;&amp; git fetch &amp;&amp; git checkout my_branch &amp;&amp; git stash pop
+</code></pre></div></div>
+
+<h4 id="download-a-single-file">Download a single file</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git fetch --all
+git checkout origin/myBranch -- my/file.cpp
+</code></pre></div></div>
+
+<h3 id="bash">Bash</h3>
+
+<h4 id="files-with-details">Files with details</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ls -hal
+</code></pre></div></div>
+
+<h4 id="change-permissions">Change permissions</h4>
+
+<p><a href="https://linuxhint.com/linux_file_permissions/" title="More permissions">More permissions here.</a></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chmod -R MODE DIRECTORY
+
+chmod -R 755 /var/www/html
+</code></pre></div></div>
+
+<p>MODE in octal notation is handy but cannot do incremental change.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chmod +x my script.sh
+</code></pre></div></div>
+
+<p><a href="https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html">See the official doc for more variable expansion.</a></p>
+
+<h4 id="getvalue-or-default">getValue or default</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>${MY_VAR:-"default_value"}
+</code></pre></div></div>
+
+<h4 id="getvalue-or-default-and-set">getValue or default and set</h4>
+
+<p>If MY_VAR is not set, it is set to the right side.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>${MY_VAR:="default_value"}
+</code></pre></div></div>
+
+<h4 id="expand-if-not-empty-else-nothing">Expand if not empty else nothing</h4>
+
+<p>Expand the right if left is set and non-empty. Otherwise expands to nothing</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>${MY_VAR:+"$MY_VAR"}
+</code></pre></div></div>
+
+<h4 id="slice">Slice</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>string=01234567890abcdefgh
+echo ${string:7}
+&gt;&gt;&gt; 7890abcdefgh
+echo ${string:7:2}
+&gt;&gt;&gt; 78
+echo ${string:7:-2}
+&gt;&gt;&gt; 7890abcdef
+echo ${string: -7}
+&gt;&gt;&gt; bcdefgh
+$ echo ${string: -7:2}
+bc
+$ echo ${string: -7:-2}
+bcdef
+</code></pre></div></div>
+
+<h4 id="get-the-length-of-a-variable">Get the length of a variable</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>${#VAR}
+</code></pre></div></div>
+
+<h3 id="maven">Maven</h3>
+
+<h4 id="find-unused-dependencies">Find unused dependencies</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./mvnw dependency:analyze
+</code></pre></div></div>
+
+<p>If the dependency is not used at compile time, the plugin will state a dependency is not used. To mark a dependency as used:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;plugin&gt;
+    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+    &lt;artifactId&gt;maven-dependency-plugin&lt;/artifactId&gt;
+    &lt;configuration&gt;
+        &lt;usedDependencies&gt;
+            &lt;dependency&gt;commons-collections:commons-collections&lt;/dependency&gt;
+        &lt;/usedDependencies&gt;
+    &lt;/configuration&gt;
+&lt;/plugin&gt;
+</code></pre></div></div>
+
+<h4 id="find-dependency-updates">Find dependency updates</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./mvnw versions:display-dependency-updates
+</code></pre></div></div>
+
+<h4 id="find-dependency-conflicts">Find dependency conflicts</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./mvnw dependency:tree -Dverbose -Dincludes=org.eclipse.jetty:::
+</code></pre></div></div>
+
+<p>Use <code class="highlighter-rouge">includes</code> to filter.</p>
+
+<h3 id="static-analysis">Static Analysis</h3>
+
+<h4 id="run-infer-on-maven-project">Run infer on maven project</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>infer -- ./mvnw clean package -DskipTests
+</code></pre></div></div>
+
+<h3 id="jfr-profiling">JFR profiling</h3>
+
+<p>For a short running process</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-XX:StartFlightRecording=settings=profile,filename=test-run.jfr,dumponexit=true -XX:FlightRecorderOptions=stackdepth=128
+</code></pre></div></div>
+
+<h3 id="links">Links</h3>
+
+<p>Check ANSI SQL conformance:</p>
+
+<ul>
+  <li>[2016](<a href="https://developer.mimer.com/sql-2016-validator/" title="https://developer.mimer.com/sql-2016-validator/">https://developer.mimer.com/sql-2016-validator/</a>)</li>
+  <li>[1999](<a href="https://developer.mimer.com/services/sql-99-validator/" title="https://developer.mimer.com/services/sql-99-validator/">https://developer.mimer.com/services/sql-99-validator/</a>)</li>
+</ul>
+
+<p>--</p>
+
+    </div>
+</div>
+		</section>
+	</main><script async src="https://www.googletagmanager.com/gtag/js?id=UA-143787397-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-143787397-1');
+	</script></body>
+</html>
