@@ -23,6 +23,7 @@ plainwhite:
   name: Cyril de Catheu
   date_format: "%-d %b %Y"
   sitemap: true
+  newsletter: https://world.hey.com/cdecatheu
   giscus:
     repo: cyrilou242/cyrilou242.github.io
     repo_id: MDEwOlJlcG9zaXRvcnkxOTY2NDE0NzQ=

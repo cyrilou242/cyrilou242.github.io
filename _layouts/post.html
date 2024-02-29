@@ -20,6 +20,9 @@ layout: default
 <div class="post">
 	{{ content }}
 </div>
+{%- if site.plainwhite.newsletter -%}
+<a href="{{ site.plainwhite.newsletter }}" target="_blank">Subscribe to the newsletter</a>
+{%- endif -%}	
 {%- if site.plainwhite.giscus.repo -%}
 <div id="giscus_thread"></div>
 	<script src="https://giscus.app/client.js"
