@@ -1,10 +1,10 @@
 ---
 title: BIO
-date: 2021-07-29 13:33:36 Z
-layout: page
+date: 2021-07-29 13:33:00 Z
 categories: misc
 lang: en
 ref: about
+layout: page
 ---
 
 ## Hey, I'm Cyril.
@@ -32,7 +32,8 @@ Any questions or projects, you can contact me through:
 
 ### Presentations
 
-* [High-frequency monitoring with ThirdEye]()
+* [Error monitoring at DoorDash with ThirdEye](https://docs.google.com/presentation/d/13Uvfx_fFYHy2ixyQTuztLkDv9Da8A6tO4MgGOskjdY4/edit?usp=sharing) - Real-Time Analytics Summit 2024
+* [High-frequency monitoring with ThirdEye](https://docs.google.com/presentation/d/1OHVaefHKsX45TTOBzWNCuf9by5oFF94GCTAcPLz6ies/edit?usp=sharing)
 * 🇫🇷 [Data quality: monitoring thousands of metrics with ThirdEye](https://docs.google.com/presentation/d/1pQf2tqOFRo6Zc-VMxQiFa3mJOFYWaOoisItGqmvUTJY/edit?usp=sharing)  
   Salon de la Data Nantes - 2021
 * 🇫🇷 🎧 Cloud costs - [An experiment gone wrong](https://podcast.ausha.co/postmortem/13)  
