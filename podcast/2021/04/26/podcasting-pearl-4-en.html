@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link type="application/atom+xml" rel="alternate" href="http://catheu.tech/feed.xml" title="catheu.tech" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="shortcut icon" type="image/ico" href="/assets/favicon.ico"/>
+<title>Podcasting Pearl #4: Scale your analytics on the Clickhouse Data Warehouse.</title>
+<html lang="en">
+<script src="https://kit.fontawesome.com/cf713a3727.js"></script>
+<!-- Begin Jekyll SEO tag v2.1.0 -->
+<title>Podcasting Pearl #4: Scale your analytics on the Clickhouse Data Warehouse. - catheu.tech</title>
+<meta property="og:title" content="Podcasting Pearl #4: Scale your analytics on the Clickhouse Data Warehouse." />
+<meta name="description" content="ClickHouse: open-source, column oriented DB engine." />
+<meta property="og:description" content="ClickHouse: open-source, column oriented DB engine." />
+<link rel="canonical" href="http://catheu.tech/podcast/2021/04/26/podcasting-pearl-4-en.html" />
+<meta property="og:url" content="http://catheu.tech/podcast/2021/04/26/podcasting-pearl-4-en.html" />
+<meta property="og:site_name" content="catheu.tech" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-04-26T02:02:36+00:00" />
+<script type="application/ld+json">
+{"@context": "http://schema.org",
+"@type": "BlogPosting",
+"headline": "Podcasting Pearl #4: Scale your analytics on the Clickhouse Data Warehouse.",
+"datePublished": "2021-04-26T02:02:36+00:00",
+"description": "ClickHouse: open-source, column oriented DB engine.",
+"url": "http://catheu.tech/podcast/2021/04/26/podcasting-pearl-4-en.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+	<main class="container">
+		<section class="about">
+			<div class="absolute top-1 left">
+			<!-- multi language
+			-->
+      		<a href="/index-en.html" class="home"><i>CATHEU.TECH</i></a>
+    		</div>
+			<img src="/assets/portfolio.png" alt="Cyril de Catheu">
+			<h2>Cyril de Catheu</h2>
+			<p class="tagline">Data Engineer</p>
+			<ul class="social">
+				<a href="https://github.com/cyrilou242"><li><i class="icon-github-circled"></i></li></a>
+				<a href="https://www.linkedin.com/in/cyril-de-catheu"><li><i class="icon-linkedin-squared"></i></li></a>
+				<a type="application/atom+xml" href="/feed.xml"><li><i class="rssfeed fas fa-rss-square"></i></li></a>
+			</ul><a href="https://world.hey.com/cdecatheu" target="_blank">Newsletter</a><!-- mutli language
+			<ul class="social">
+				
+				
+						<a href="/podcast/2021/04/26/podcasting-pearl-4-en.html" class="en">en</a>
+				
+				
+				
+			</ul>
+			--><div class="hypem">
+				<div id="hypem-widget"></div><script type="text/javascript" src="https://hypem.com/widget/v2/loved/
+				cyrilou242/6/hype.js?bcol=fef2eb&
+				tcol=ff4e47&
+				lcol=ff4e47"></script>
+			</div></section>
+		<section class="content">
+			<header class="header">
+			<nav class="navbar">
+				<a class="navlink" href="/">HOME</a>
+				<a class="navlink" href="/pages/2019-08-13-a-propos-en.html">BIO</a><a class="navlink" href="/pages/2021-07-28-podcasting-pearls-en.html">PODCASTING PEARLS</a><a class="navlink" href="/pages/2021-07-29-references.html">GOOD READS</a><a class="navlink" href="/pages/git-cmds.html">SNPTS</a></nav>
+			</header>
+			<div class="post-container">
+<a class="post-link" href="/podcast/2021/04/26/podcasting-pearl-4-en.html">
+	<h2 class="post-title">Podcasting Pearl #4: Scale your analytics on the Clickhouse Data Warehouse.</h2>
+</a>
+	<div class="post-date"><i class="icon-calendar"></i>
+
+    April 26,
+ 
+
+ 2021</div>
+	<!-- 
+<div class="post-meta">
+	<ul class="post-categories">
+		</ul>
+</div>
+-->
+<div class="post">
+	<p>ClickHouse: open-source, column oriented DB  engine.</p>
+
+<iframe src="https://open.spotify.com/embed/episode/7zak3WAkcXZ0dlZaHvVLS4" width="100%" style="max-width:660px" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<iframe src="https://embed.podcasts.apple.com/us/podcast/scale-your-analytics-on-the-clickhouse-data-warehouse/id1193040557?i=1000443943650&amp;itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=light" height="175px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *;" style="width: 100%; max-width: 660px; overflow: hidden; border-radius: 10px; background: transparent;"></iframe>
+
+<p><strong>Disclaimer</strong>:
+Some technical details are outdated in this podcast, but the discussion is still very relevant.</p>
+
+<p><strong>Principles:</strong></p>
+<ul>
+  <li>created by Yandex for equivalent of Google Analytics: OLAP use cases.</li>
+  <li>columnar: compress data along columns. To add data: decompress, merge sort, compress. This for all columns.</li>
+</ul>
+
+<p><strong>Consequences of columnar design:</strong></p>
+<ul>
+  <li>does not like deletes: requires to decompress chunks, sometimes to copy big amount of data.</li>
+  <li>inserting row by row is will have bad performance</li>
+  <li>accessing single row is not effective</li>
+</ul>
+
+<p><strong>Inserting capabilities:</strong></p>
+<ul>
+  <li>batch load</li>
+  <li>HTTP API, but tCP with typed column is better</li>
+  <li>CLI (great)</li>
+  <li>read from Kafka</li>
+  <li>read from datalake</li>
+  <li>read other DBs (MySQL, PostGre)</li>
+</ul>
+
+<p>Fact table in ClickHouse OLAP, dimension table in SQL for easy update (OLTP).</p>
+
+<p><strong>Nice features:</strong></p>
+<ul>
+  <li>array management (nested columns)</li>
+  <li>aggregation in real-time</li>
+  <li>approximate unique (sketches, hyperloglog like)</li>
+  <li>approximate joins</li>
+  <li>SQL based ttl: allows to change storage type based on time</li>
+</ul>
+
+<p><strong>Modelling:</strong><br />
+Easy thanks to schema evolution.</p>
+
+<ol>
+  <li>
+    <ul>
+      <li>partition key</li>
+      <li>primary sort order</li>
+      <li>load everything as string</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>update types</li>
+      <li>codex: compression</li>
+      <li>low cardinality strings (lookup table for strings with few different values)</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>store data in arrays</li>
+      <li>materialize columns</li>
+      <li>ETL to ELT paradigm</li>
+    </ul>
+  </li>
+</ol>
+
+<p><strong>Installation:</strong><br />
+Easy to install, easy to manage (for a distributed OLAP DB).</p>
+<ul>
+  <li>focus on infrastructure integration before performance</li>
+  <li>bare metal » virtualized for performance</li>
+  <li>works quite well on Kubernetes (requires some tweaking)</li>
+</ul>
+
+<p>Security and access control and  was not very mature in 2019.</p>
+
+<p><strong>Vision of the future:</strong><br />
+OLAP and AI are two separate worlds: this will change. ML will be embedded into the DBs.</p>
+<ul>
+  <li>keeps compute close to the data –&gt; cost + performance</li>
+  <li>same language for data gathering and processing  –&gt; less errors</li>
+</ul>
+
+
+</div><a href="https://world.hey.com/cdecatheu" target="_blank">Subscribe to the newsletter</a><div id="giscus_thread"></div>
+	<script src="https://giscus.app/client.js"
+					data-repo="cyrilou242/cyrilou242.github.io"
+					data-repo-id="MDEwOlJlcG9zaXRvcnkxOTY2NDE0NzQ="
+					data-category="Blog comments"
+					data-category-id="DIC_kwDOC7iCws4CdhQL"
+					data-mapping="og:title"
+					data-strict="1"
+					data-reactions-enabled="1"
+					data-emit-metadata="0"
+					data-input-position="top"
+					data-theme="preferred_color_scheme"
+					data-lang="en"
+					data-loading="lazy"
+					crossorigin="anonymous"
+					async>
+	</script>
+  <noscript>Please enable JavaScript to view the comments.</noscript>
+</div>
+		</section>
+	</main><script async src="https://www.googletagmanager.com/gtag/js?id=UA-143787397-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-143787397-1');
+	</script></body>
+</html>
