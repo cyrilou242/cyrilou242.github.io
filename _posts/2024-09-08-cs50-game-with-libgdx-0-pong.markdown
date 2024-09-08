@@ -7,8 +7,8 @@ tags:
 - game
 ---
 
-An adaptation of Harvard CS50 Game for LibGDX. 
-[Lecture 0: Pong](https://cs50.harvard.edu/games/2018/notes/0/)
+An adaptation of Harvard CS50 Game for LibGDX.  
+[Lecture 0: Pong](https://cs50.harvard.edu/games/2018/notes/0/).  
 Watch the video [here](https://cs50.harvard.edu/games/2018/weeks/0/).
 
 # Today’s Topics
