@@ -6,6 +6,7 @@ categories:
 tags:
 - game
 lang: en
+ref: cs50g0
 ---
 
 An adaptation of Harvard CS50 Game for LibGDX.  
