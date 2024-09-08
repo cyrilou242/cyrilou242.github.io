@@ -47,7 +47,6 @@ t:
     home:
       name: Home
       url: "/index-en.html"
-#theme: plainwhite
 remote_theme: plainwhite
 plugins:
 - jekyll-seo-tag
