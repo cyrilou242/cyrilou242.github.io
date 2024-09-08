@@ -5,6 +5,7 @@ categories:
 - game
 tags:
 - game
+lang: en
 ---
 
 An adaptation of Harvard CS50 Game for LibGDX.  
