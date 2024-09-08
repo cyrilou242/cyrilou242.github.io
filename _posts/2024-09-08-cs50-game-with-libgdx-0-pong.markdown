@@ -13,7 +13,7 @@ An adaptation of Harvard CS50 Game for LibGDX.
 Watch the video [here](https://cs50.harvard.edu/games/2018/weeks/0/).
 
 # Today’s Topics
-- Lua
+Java
   - This is the programming language that we’ll be using predominantly throughout the course. Lua is a dynamic scripting language similar to Python and JavaScript.
 
 - LÖVE2D
