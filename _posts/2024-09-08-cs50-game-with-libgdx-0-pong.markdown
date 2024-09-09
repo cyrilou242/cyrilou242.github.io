@@ -83,10 +83,10 @@ A player scores by getting the ball past the opponent’s paddle and into their 
 ![pong example](/assets/images/cs50-game-with-libgdx-0-pong/pong_example.png){: width="700" }
 
 # Lecture’s Scope
-First off, we’ll want to draw shapes to the screen (e.g., paddles and ball) so that the user can see the game.
-Next, we’ll want to control the 2D position of the paddles based on input, and implement collision detection between the 
+- First off, we’ll want to draw shapes to the screen (e.g., paddles and ball) so that the user can see the game.
+- Next, we’ll want to control the 2D position of the paddles based on input, and implement collision detection between the 
 paddles and ball so that each player can deflect the ball back toward their opponent.
-We’ll also need to implement collision detection between the ball and screen boundaries to keep the 
+- We’ll also need to implement collision detection between the ball and screen boundaries to keep the 
 ball within the vertical bounds of the screen and to detect scoring events (outside horizontal bounds)
-At that point, we’ll want to add sound effects for when the ball hits paddles and walls, and for when a point is scored.
-Lastly, we’ll display the score on the screen so that the players don’t have to remember it during the game.
+- At that point, we’ll want to add sound effects for when the ball hits paddles and walls, and for when a point is scored.
+- Lastly, we’ll display the score on the screen so that the players don’t have to remember it during the game.
