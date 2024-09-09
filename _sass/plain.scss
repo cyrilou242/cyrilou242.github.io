@@ -17,12 +17,16 @@ container {
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 16px;
   line-height: 1.2em;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  list-style-type: square;
 }
 
 img, embed, object, video {
@@ -157,10 +161,26 @@ main {
 }
 
 .post-link {
+  a {
+    text-decoration: none;
+  }
+  .post-date {
+    font-family: 'PT Mono'; 
+  }
   text-decoration: none;
+  font-size: 18px;
 }
 
 .post-title {
+  line-height: 1.2em;
+  font-size: 25px;
+  @media screen and (max-width: $mobileW) {
+    font-size: 19px;
+  }
+  margin: 0.3em 0;
+}
+
+.post-title-home {
   line-height: 1.2em;
   font-size: 23px;
   @media screen and (max-width: $mobileW) {
@@ -187,9 +207,10 @@ main {
 }
 
 .post {
-  font-size: 18px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
+  ul li p { margin: 5px 0px; }
+  
+  font-weight: 300;
+  font-size: 17px;
   color: #222;
   line-height: 1.4em;
 

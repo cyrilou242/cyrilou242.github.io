@@ -7,28 +7,27 @@ ref: about
 layout: page
 ---
 
-## Hey, I'm Cyril.
+## Hi there
+I'm a software engineer @[Startree.ai](https://www.startree.ai/).  
+I work on data intensive backends. I spend most of my time on [ThirdEye](https://github.com/startreedata/thirdeye/) these days.  
+My interest lies in streaming systems, data warehousing, timeseries analysis, data quality, and exploration/exploitation problems.  
+In terms of business, I’m mostly interested in cloud offerings, open-source business models, and engineering tools/platforms.  
+Previously @[AB Tasty](https://www.abtasty.com/) and alumnus of Centrale Nantes - Computer Science.  
 
-I'm a data engineer, currently at [AB Tasty](https://www.abtasty.com/).
-CS and NLP engineer by education, I am based in Paris.  
-My engineering interest lies in streaming systems, data warehousing, data quality, and exploration/exploitation problems. In terms of business, I'm mostly interested in cloud offerings, open-source business models, and engineering tools/platforms.
-
-When I started this blog, I wanted to write about NLP. After a year and a half with exactly zero article, I finally admitted I was not interested (and relevant) anymore in the field. Nowadays, I'm mostly sharing podcasts [I find interesting](./2021-07-28-podcasting-pearls-en.html) and little news.
-
-Outside of technology, I am a long-distance runner at the Stade Français. This blog will never deal with running but feel free to check me out on [Strava](https://www.strava.com/athletes/14548186).
+Outside of technology, I am a long-distance runner at the Dijon Université Club. Feel free to check me out on [Strava](https://www.strava.com/athletes/14548186).
 
 Any questions or projects, you can contact me through:
 
 * [Github](https://github.com/cyrilou242)
 * [Linkedin](https://www.linkedin.com/in/cyril-de-catheu/)
-* [Medium](https://medium.com/@cdecatheu)
 * directly at `cdecatheu` on hey.com mail.
 
 ### Projects
-
-* [raplyric.eu](https://raplyrics.eu/) \~ AI rap lyrics generation
+* [ftcc](https://github.com/cyrilou242/ftcc) \~ SOTA compression-based text classification in Python
+* [jnotebook](https://jnotebook.catheu.tech/) \~ An interactive notebook system for Java
+* [mockseries](https://mockseries.catheu.tech/) \~ An intuitive Python library to generate synthetic timeseries
 * [learning-lightnr](https://github.com/cyrilou242/learning-lightnr) \~ Generate multiple-choice fill-in-the-blank questions from any text
-* [mockseries](https://mockseries.catheu.tech/) \~ Synthetic timeseries generation in python
+* [raplyric.eu](https://raplyrics.eu/) \~ AI rap lyrics generation
 
 ### Presentations
 

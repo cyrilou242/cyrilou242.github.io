@@ -1,40 +1,67 @@
 ---
-title: 'CS50 Game with LibGdx - 0: Pong'
+title: 'CS50 Game in Java with LibGdx: 0 - Pong'
 date: 2024-09-08 21:21:00 Z
 categories:
 - game
-tags:
-- game
+layout: post
 lang: en
 ref: cs50g0
 ---
 
-An adaptation of Harvard CS50 Game for LibGDX.\
-[Lecture 0: Pong](https://cs50.harvard.edu/games/2018/notes/0/).\
-Watch the video [here](https://cs50.harvard.edu/games/2018/weeks/0/).
+An adaptation of Harvard CS50 Game for LibGDX. [Lecture 0: Pong](https://cs50.harvard.edu/games/2018/notes/0/). Watch the video [here](https://cs50.harvard.edu/games/2018/weeks/0/).
 
-# Today’s Topics
+## Today’s Topics
 
-* Java  
-  This is the programming language that we’ll be using predominantly throughout the course. Lua is a dynamic scripting language similar to Python and JavaScript.
+- Java  
+  This is the programming language that we’ll be using predominantly throughout the course. Java is a dynamic scripting language similar to Python and JavaScript.
 
-* LibGDX  
+- LibGDX  
   The primary game framework we’ll be using throughout the course. It works hand in hand with Java, and you can find documentation for it at libgdx.com/dev.
 
-* Drawing Shapes and Text  
+- Drawing Shapes and Text  
   Two of the most basic principles of game development, being able to draw shapes and text is what will allow us to render our game on a screen.
 
-* DeltaTime and Velocity  
+- DeltaTime and Velocity  
   DeltaTime, arguably one of the most important variables that we keep track of in any game framework, is the time elapsed since the last frame of execution in our game. LibGDX measures DeltaTime in terms of seconds, so we’ll see how this concept relates to velocity.
 
-* Game State  
+- Game State  
   Every game is composed of a series of states (e.g., the title screen state, gameplay state, menu state, etc.), so it will be important to understand this concept since we’ll want different rendering logic and update logic for each state.
 
-* Basic OOP (Object-Oriented Programming)  
+- Basic OOP (Object-Oriented Programming)  
   The use of Object-Oriented Programming will allow us to encapsulate our data and game objects such that each object in our game will be able to keep track of all the information that is relevant to it, as well as have access to specific functions that are unique to it.
 
-* Box Collision (Hitboxes)  
+- Box Collision (Hitboxes)  
   Understanding the concept of box collision will be necessary in order to bring Pong to life, since we’ll need to be able to “bounce” a ball back and forth between two paddles. The ball and paddles will be rectangular, so we’ll focus on “Axis-Aligned Bounding Boxes,” which will allow us to calculate collisions more simply.
 
-* Sound Effects (with bfxr)  
+- Sound Effects (with bfxr)  
   Lastly, we’ll learn how to polish up our game with sound effects in order to make it more enticing and immersive.
+
+## Installing libGDX
+- Before you start following along with the rest of the lecture, be sure to have libGDX setup on your machine, 
+  which you can do through the following [libgdx.com/wiki/start/setup](https://libgdx.com/wiki/start/setup).
+
+
+## Downloading Demo Code
+Next, be sure to download the code for today’s lecture, which you can find at: [github.com/cyrilou242/cs50-pong-java-libgdx](https://github.com/cyrilou242/cs50-pong-java-libgdx).  
+This should make it easier to follow along without having to focus on matching every keystroke in real time.  
+Each commit corresponds to a step pong-0, pong-1, pong-2, etc in [the video](https://cs50.harvard.edu/games/2018/weeks/0/). Make sure to know how to get to a specific commit in git. 
+
+## What is Java?
+If you read this Java/LibGdx article instead of the Lua/Love2D one, you must know what is Java. Just in case: https://en.wikipedia.org/wiki/Java_(programming_language).
+
+## What is libGDX?
+libGDX is a free cross-platform Java game development framework based on OpenGL (ES) that 
+works on Windows, Linux, macOS, Android, your browser and iOS.
+It contains modules for graphics, keyboard input, math, audio, windowing, physics, 
+and much more.
+
+## What is a game loop?
+A game, fundamentally, is an infinite loop, like a while(true) or a while(1). During every iteration of that loop, we’re repeatedly performing the following set of steps:
+- First, we’re processing input. That is to say, we’re constantly checking: has the user pressed a key on the keyboard, moved the joystick, moved/clicked the mouse, etc.?
+- Second, we need to respond to that input from the previous step by updating anything in the game that depends on that input (i.e., tracking movement, detecting collisions, etc.).
+- Third, we need to re-render anything that was updated in the previous step, so that the user can see visually on the screen that the game has changed and feel a sense of interactivity.
+
+![the game loop](https://cs50.harvard.edu/games/2018/notes/0/game_loop.png)
+Photo taken from [gameprogrammingpatterns.com/game-loop.html](gameprogrammingpatterns.com/game-loop.html), where you can read more about game loops.
+
+

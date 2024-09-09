@@ -13,27 +13,12 @@ layout: default
 <ul class="posts">
 	{%- for post in posts -%}
 	<li>
-		<a class="post-link" href="{{ post.url | relative_url }}">
-			<h2 class="post-title">{{ post.title | escape }}</h2>
+		<span class="post-link">
+			<p><span class="post-date">{% include date.html date=post.date %}</span><a href="{{ post.url | relative_url }}">
+			<span>{{ post.title | escape }}</span>
 		</a>
-		<div class="post-date">{% include date.html date=post.date %}</div>
-		<!-- 
-		<div class="post-meta">
-			<ul class="post-categories">
-				{%- for tag in post.categories -%}
-				<li>{{ tag }}</li>
-				{%- endfor -%}
-			</ul>
-		</div>
-		-->
-		<div class="post">
-			{%- if site.show_excerpts -%}
-			{{ post.excerpt }}
-			{%- endif -%}
-		</div>
-	</li>
-	<li>
-		<h1 id="posts-label"></h1>
+		</p>
+			</span>
 	</li>
 	{%- endfor -%}
 </ul>
