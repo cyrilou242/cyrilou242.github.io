@@ -8,15 +8,20 @@ lang: en
 ref: cs50g0
 ---
 
-An adaptation of Harvard CS50 Game for LibGDX. [Lecture 0: Pong](https://cs50.harvard.edu/games/2018/notes/0/). Watch the video [here](https://cs50.harvard.edu/games/2018/weeks/0/).
+*An adaptation of Harvard CS50 Game in Java with libGDX. The original course uses Lua and Love2D. 
+All credits to Colton Ogden and David J. Malan.* 
+
+Watch the course video [here](https://cs50.harvard.edu/games/2018/weeks/0/).  
+Original notes in Lua with Love2D: [Lecture 0: Pong](https://cs50.harvard.edu/games/2018/notes/0/).  
+Below are the notes adapted for Java with libGDX.
 
 ## Today’s Topics
 
 - Java  
-  This is the programming language that we’ll be using predominantly throughout the course. Java is a dynamic scripting language similar to Python and JavaScript.
+  This is the programming language that we’ll be using predominantly throughout the course. Java is a general purpose, high-level, class-based, object-oriented programming language.
 
 - LibGDX  
-  The primary game framework we’ll be using throughout the course. It works hand in hand with Java, and you can find documentation for it at libgdx.com/dev.
+  The primary game framework we’ll be using throughout the course. It works hand in hand with Java, and you can find documentation for it at [libgdx.com/dev](https://libgdx.com/dev).
 
 - Drawing Shapes and Text  
   Two of the most basic principles of game development, being able to draw shapes and text is what will allow us to render our game on a screen.
