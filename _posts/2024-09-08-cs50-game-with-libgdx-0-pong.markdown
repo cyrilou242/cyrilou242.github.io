@@ -61,7 +61,32 @@ A game, fundamentally, is an infinite loop, like a while(true) or a while(1). Du
 - Second, we need to respond to that input from the previous step by updating anything in the game that depends on that input (i.e., tracking movement, detecting collisions, etc.).
 - Third, we need to re-render anything that was updated in the previous step, so that the user can see visually on the screen that the game has changed and feel a sense of interactivity.
 
-![the game loop](https://cs50.harvard.edu/games/2018/notes/0/game_loop.png)
+![the game loop](/assets/images/cs50-game-with-libgdx-0-pong/game_loop.png)
 Photo taken from [gameprogrammingpatterns.com/game-loop.html](gameprogrammingpatterns.com/game-loop.html), where you can read more about game loops.
 
+## 2D Coordinate System
+- In the context of 2D games, the most fundamental way of looking at the world is by using the 2D coordinate system.
+- Similar to the traditional coordinate system you might’ve used in math class, 
+  the 2D coordinate system we’re referring to here is a system in which objects have an X and Y coordinate (X, Y) and are drawn accordingly, 
+  with the origin (0,0) being the bottom-left of the system.
+- **Caution!** The libGDX coordinate system is different from Lua Love2D's one which has the origin (0,0) in the top-left.   
+  Love2D's follows the classic representation of a display - which is usually also closest to the device/OS specific implementation - while libGdx follows the OpenGL way. Learn more [in the libGDX doc](https://libgdx.com/wiki/articles/coordinate-systems#screen-or-image-coordinates).
 
+![2 coordinate systems](/assets/images/cs50-game-with-libgdx-0-pong/coordinate_systems.png)
+*Left: the libGDX coordinate system. Right: the Love2D's coordinate system.*
+
+## Today’s Goal
+We are aiming to recreate “Pong,” a simple 2 player game in which one player has a paddle on the left side of the screen, 
+the other player has a paddle on the right side of the screen, and the first player to score 10 times on their opponent wins. 
+A player scores by getting the ball past the opponent’s paddle and into their “goal” (i.e., the edge of the screen).
+
+![pong example](/assets/images/cs50-game-with-libgdx-0-pong/pong_example.png){: width="700" }
+
+# Lecture’s Scope
+First off, we’ll want to draw shapes to the screen (e.g., paddles and ball) so that the user can see the game.
+Next, we’ll want to control the 2D position of the paddles based on input, and implement collision detection between the 
+paddles and ball so that each player can deflect the ball back toward their opponent.
+We’ll also need to implement collision detection between the ball and screen boundaries to keep the 
+ball within the vertical bounds of the screen and to detect scoring events (outside horizontal bounds)
+At that point, we’ll want to add sound effects for when the ball hits paddles and walls, and for when a point is scored.
+Lastly, we’ll display the score on the screen so that the players don’t have to remember it during the game.
