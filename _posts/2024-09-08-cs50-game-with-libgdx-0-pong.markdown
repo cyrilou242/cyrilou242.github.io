@@ -44,7 +44,7 @@ Below are the notes adapted for Java with libGDX.
 ## Installing libGDX
 - Before you start following along with the rest of the lecture, be sure to have libGDX setup on your machine, 
   which you can do through the following [libgdx.com/wiki/start/setup](https://libgdx.com/wiki/start/setup).
-
+- I recommend to go through the [official libGDX tutorial](https://libgdx.com/wiki/start/a-simple-game) first. Some elements will be redundant but at your learning stage, some repetition will not hurt.  
 
 ## Downloading Demo Code
 Next, be sure to download the code for today’s lecture, which you can find at: [github.com/cyrilou242/cs50-pong-java-libgdx](https://github.com/cyrilou242/cs50-pong-java-libgdx).  
@@ -95,3 +95,148 @@ paddles and ball so that each player can deflect the ball back toward their oppo
 ball within the vertical bounds of the screen and to detect scoring events (outside horizontal bounds)
 - At that point, we’ll want to add sound effects for when the ball hits paddles and walls, and for when a point is scored.
 - Lastly, we’ll display the score on the screen so that the players don’t have to remember it during the game.
+
+## pong-0 (“The Day-0 Update”) + pong-1 (“The Low-Res Update”)
+- pong-0 simply prints “Hello Pong!” exactly in the center of the screen. This is not incredibly exciting, but it does showcase how to use LÖVE2D’s most important functions moving forward.
+- pong-1 exhibits the same behavior as pong-0, but with much blurrier text.
+
+Contrary to `Love2D`, these two steps are performed together because using a viewport is 
+highly recommended in LibGdx. With a viewport, the `pong-1` step can be applied directly. [Learn more here](https://libgdx.com/wiki/start/a-simple-game#rendering).  
+This section will be the heaviest but should be nothing new if you followed the [official libGDX tutorial](https://libgdx.com/wiki/start/a-simple-game) first.
+
+[Diff](https://github.com/cyrilou242/cs50-pong-java-libgdx/commit/fc7606b046aa543c2bb4e83c88eda290d399f247).
+
+### Important code 
+- The `ApplicationListener` interface
+  - A base interface that provides methods to override the behavior during the [life-cycle](https://libgdx.com/wiki/app/the-life-cycle) of the game application. 
+  - `create` 
+    - This method is used for initializing our game state at the very beginning of program execution. Whatever code we put here will be executed once when the application is created.
+  - `render`
+    - This method is called at each frame of program execution; dt (i.e., `Gdx.graphics.getDeltaTime()`) will be the elapsed time in seconds since the last frame, and we can use this to scale any changes in our game for even behavior across frame rates.
+      Game logic updates are usually performed in this method.
+- A viewport:
+  ```java
+  private FitViewport viewport;
+  
+  // in create()
+  viewport = new FitViewport(WORLD_WIDTH, WORLD_HEIGHT, new OrthographicCamera(WORLD_WIDTH, WORLD_HEIGHT));
+  viewport.getCamera().position.set(WORLD_WIDTH / 2, WORLD_HEIGHT / 2, 0);
+  viewport.getCamera().update(); 
+  
+  // just before drawing
+  viewport.apply(); 
+  ```
+  - A viewport controls how we see the game. It’s like a window from our world into the game world. The viewport controls how big the game “window” is and how it’s placed on our screen. There are many kinds of viewports. 
+  The `FitViewport` ensures that no matter the size of our window, the full game will always be visible. 
+  The parameters determine how large our visible game world will be in game units.
+  The viewport uses the width and height `WORLD_WIDTH = 432;` and `WORLD_HEIGHT = 243;` this correspond to the game units.
+  In the `Lwjgl3Launcher` file, we set the application to `configuration.setWindowedMode(1280, 720);`. This means we treat our game
+  as if it were on a `432x243` window, while actually rendering it in a `1280x720` window. 
+  Learn more in the [viewports and cameras wiki](https://libgdx.com/wiki/graphics/viewports). 
+  - Always remember to update the viewport in the resize method:
+    ```java
+    @Override
+      public void resize(int width, int height) {
+          viewport.update(width, height, true);
+      }
+    ```
+- A `BitmapFont`
+  ```java
+  private BitmapFont font;
+  
+  // in create()
+  font = new BitmapFont();
+  font.setColor(1,1,1,1);
+  font.getRegion().getTexture().setFilter(TextureFilter.Nearest, TextureFilter.Nearest);
+  ```
+  A `BitmapFont` is used to render font (text) images. Drawing is then performed with: 
+  ```
+  font.draw(batch, "Hello pong", WORLD_WIDTH / 2 -40, WORLD_HEIGHT/2);
+  ```
+- A `Batch`
+  ```java
+  private SpriteBatch batch;
+  
+  // in create()
+  batch = new SpriteBatch();
+  ```
+  A `Batch` is a common trick to reduce the load on the graphical processing unit (GPU), improving the FPS. 
+  See [libgdx tutorial](https://libgdx.com/wiki/start/a-simple-game#rendering:~:text=Ever%20wonder%20why%20your%20favorite%20games%20sometimes%20have%20poor%20FPS%20or%20Frames%20Per%20Second%3F) to learn more. 
+  The `SpriteBatch` combines draw calls together before sending them to the GPU. 
+  `spriteBatch.setProjectionMatrix(viewport.getCamera().combined);`is first called to apply the `viewport` to the `SpriteBatch`. 
+  This is necessary for the images to be shown in the correct place.  
+  Then the `draw` calls are performed between the `begin` and `end` method calls of the batch.
+  ```java
+  batch.begin();
+  // drawing here
+  batch.end();
+  ```
+- `Gdx.input.isKeyPressed(Keys.<SOME_KEY>)`   
+  Returns true if the key is pressed. It allows us to receive inputs from the keyboard for our game.
+- `Gdx.app.exit()`   
+  Terminates the application upon execution.
+- We add a way to quit the game via user input, using the two functions discussed above:
+  ```java
+  if (Gdx.input.isKeyPressed(Keys.ESCAPE)) {
+    Gdx.app.exit();
+  }
+  ```
+
+## pong-2 (“The Rectangle Update”)
+- pong-2 produces a more complete, albeit static image of what our Pong program should look like.
+  
+[Diff](https://github.com/cyrilou242/cs50-pong-java-libgdx/commit/7e6d9d046cea478dd482435b7c188acb8a7ee268).
+
+## Important code
+- A new extension [gdx-freetype](https://libgdx.com/wiki/extensions/gdx-freetype) to draw text.   
+  In the previous section, we used a `BitmapFont` to render text. We now want to use a front from 
+  a `.ttf` file. 
+  - We add the [gdx-freetype](https://libgdx.com/wiki/extensions/gdx-freetype) extension to the project in `core/build.gradle`.
+    ```gradle
+    api "com.badlogicgames.gdx:gdx-freetype:$gdxVersion"
+    ```
+  - We add `font.ttf` to the `assets` folder.
+  - We can then generate a `BitmapFont` of a given size on the fly from `ttf` files.
+    ```java
+    private BitmapFont smallFont;
+    
+    // in create()
+    final FreeTypeFontGenerator generator = new FreeTypeFontGenerator(Gdx.files.internal("font.ttf"));
+    final FreeTypeFontParameter parameter = new FreeTypeFontParameter();
+    parameter.size = 8;
+    smallFont = generator.generateFont(parameter);
+    smallFont.getRegion().getTexture().setFilter(TextureFilter.Nearest, TextureFilter.Nearest);
+    smallFont.setColor(1, 1,1,1);
+    generator.dispose(); // don't forget to dispose to avoid memory leaks!
+    ```
+  - To center the text, we compute the `GlyphLayout`, which corresponds the rendered text layout, then we use its width.
+    ```java
+    final GlyphLayout layout = new GlyphLayout(smallFont, "Hello Pong!");
+    smallFont.draw(batch, layout, (WORLD_WIDTH - layout.width) / 2, WORLD_HEIGHT - 20);
+    ```
+    As you can see, are shifting “Hello Pong!” higher up on the screen.
+- A `ShapeRenderer` to draw rectangles
+  ```java
+  private ShapeRenderer shape;
+  
+  // in create()
+  shape = new ShapeRenderer();
+  
+  // in render() --> draw()
+  shape.setProjectionMatrix(viewport.getCamera().combined);
+  shape.begin(ShapeType.Filled);
+  shape.setColor(Color.WHITE);
+  shape.rect(10, WORLD_HEIGHT - 30 - 20, 5, 20);
+  shape.rect(WORLD_WIDTH - 10 - 5, 30, 5, 20);
+  shape.rect(WORLD_WIDTH / 2 -2 , WORLD_HEIGHT / 2 - 2, 4, 4);
+  shape.end();
+  ```
+  Similarly to `SpriteBatch` for textures, a shape has a `begin` and `end` methods to batch drawings.  
+  The paddles are positioned on opposing ends of the screen, and the ball in the center.
+
+
+  
+   
+  
+
+
