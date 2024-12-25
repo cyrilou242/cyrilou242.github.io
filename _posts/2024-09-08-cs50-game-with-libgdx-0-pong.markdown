@@ -24,22 +24,27 @@ Below are the notes adapted for Java with libGDX.
   The primary game framework we’ll be using throughout the course. It works hand in hand with Java, and you can find documentation for it at [libgdx.com/dev](https://libgdx.com/dev).
 
 - Drawing Shapes and Text  
-  Two of the most basic principles of game development, being able to draw shapes and text is what will allow us to render our game on a screen.
+  Two of the most basic principles of game development, being able to draw shapes and text is what 
+  will allow us to render our game on a screen.
 
 - DeltaTime and Velocity  
-  DeltaTime, arguably one of the most important variables that we keep track of in any game framework, is the time elapsed since the last frame of execution in our game. LibGDX measures DeltaTime in terms of seconds, so we’ll see how this concept relates to velocity.
+  DeltaTime, arguably one of the most important variables that we keep track of in any game 
+  framework, is the time elapsed since the last frame of execution in our game. LibGDX measures 
+  DeltaTime in terms of seconds, so we’ll see how this concept relates to velocity.
 
 - Game State  
   Every game is composed of a series of states (e.g., the title screen state, gameplay state, menu state, etc.), so it will be important to understand this concept since we’ll want different rendering logic and update logic for each state.
 
 - Basic OOP (Object-Oriented Programming)  
-  The use of Object-Oriented Programming will allow us to encapsulate our data and game objects such that each object in our game will be able to keep track of all the information that is relevant to it, as well as have access to specific functions that are unique to it.
+  The use of Object-Oriented Programming will allow us to encapsulate our data and game objects 
+  such that each object in our game will be able to keep track of all the information that is relevant to it, as well as have access to specific functions that are unique to it.
 
 - Box Collision (Hitboxes)  
-  Understanding the concept of box collision will be necessary in order to bring Pong to life, since we’ll need to be able to “bounce” a ball back and forth between two paddles. The ball and paddles will be rectangular, so we’ll focus on “Axis-Aligned Bounding Boxes,” which will allow us to calculate collisions more simply.
+  Understanding the concept of box collision will be necessary in order to bring Pong to life, since we’ll need to be able to "bounce" a ball back and forth between two paddles. The ball and paddles will be rectangular, so we’ll focus on "Axis-Aligned Bounding Boxes," which will allow us to calculate collisions more simply.
 
 - Sound Effects (with bfxr)  
-  Lastly, we’ll learn how to polish up our game with sound effects in order to make it more enticing and immersive.
+  Lastly, we’ll learn how to polish up our game with sound effects in order to make it more 
+  enticing and immersive.
 
 ## Installing libGDX
 - Before you start following along with the rest of the lecture, be sure to have libGDX setup on your machine, 
@@ -52,7 +57,7 @@ This should make it easier to follow along without having to focus on matching e
 Each commit corresponds to a step pong-0, pong-1, pong-2, etc in [the video](https://cs50.harvard.edu/games/2018/weeks/0/). Make sure to know how to get to a specific commit in git. 
 
 ## What is Java?
-If you read this Java/LibGdx article instead of the Lua/Love2D one, you must know what is Java. Just in case: https://en.wikipedia.org/wiki/Java_(programming_language).
+If you read this Java/LibGdx article instead of the Lua/Love2D one, you do know what is [Java](https://en.wikipedia.org/wiki/Java_(programming_language)) right? Right?
 
 ## What is libGDX?
 libGDX is a free cross-platform Java game development framework based on OpenGL (ES) that 
@@ -81,9 +86,9 @@ Photo taken from [gameprogrammingpatterns.com/game-loop.html](gameprogrammingpat
 *Left: the libGDX coordinate system. Right: the Love2D's coordinate system.*
 
 ## Today’s Goal
-We are aiming to recreate “Pong,” a simple 2 player game in which one player has a paddle on the left side of the screen, 
+We are aiming to recreate "Pong," a simple 2 player game in which one player has a paddle on the left side of the screen, 
 the other player has a paddle on the right side of the screen, and the first player to score 10 times on their opponent wins. 
-A player scores by getting the ball past the opponent’s paddle and into their “goal” (i.e., the edge of the screen).
+A player scores by getting the ball past the opponent’s paddle and into their "goal" (i.e., the edge of the screen).
 
 ![pong example](/assets/images/cs50-game-with-libgdx-0-pong/pong_example.png){: width="700" }
 
@@ -96,8 +101,8 @@ ball within the vertical bounds of the screen and to detect scoring events (outs
 - At that point, we’ll want to add sound effects for when the ball hits paddles and walls, and for when a point is scored.
 - Lastly, we’ll display the score on the screen so that the players don’t have to remember it during the game.
 
-## pong-0 (“The Day-0 Update”) + pong-1 (“The Low-Res Update”)
-- pong-0 simply prints “Hello Pong!” exactly in the center of the screen. This is not incredibly exciting, but it does showcase how to use LÖVE2D’s most important functions moving forward.
+## pong-0 ("The Day-0 Update") + pong-1 ("The Low-Res Update")
+- pong-0 simply prints "Hello Pong!" exactly in the center of the screen. This is not incredibly exciting, but it does showcase how to use LÖVE2D’s most important functions moving forward.
 - pong-1 exhibits the same behavior as pong-0, but with much blurrier text.
 
 Contrary to `Love2D`, these two steps are performed together because using a viewport is 
@@ -110,7 +115,8 @@ This section will be the heaviest but should be nothing new if you followed the 
 - The `ApplicationListener` interface
   - A base interface that provides methods to override the behavior during the [life-cycle](https://libgdx.com/wiki/app/the-life-cycle) of the game application. 
   - `create` 
-    - This method is used for initializing our game state at the very beginning of program execution. Whatever code we put here will be executed once when the application is created.
+    - This method is used for initializing the game state at the very beginning of program execution. 
+      Whatever code we put here will be executed once when the application is created.
   - `render`
     - This method is called at each frame of program execution; dt (i.e., `Gdx.graphics.getDeltaTime()`) will be the elapsed time in seconds since the last frame, and we can use this to scale any changes in our game for even behavior across frame rates.
       Game logic updates are usually performed in this method.
@@ -126,7 +132,8 @@ This section will be the heaviest but should be nothing new if you followed the 
   // just before drawing
   viewport.apply(); 
   ```
-  - A viewport controls how we see the game. It’s like a window from our world into the game world. The viewport controls how big the game “window” is and how it’s placed on our screen. There are many kinds of viewports. 
+  - A viewport controls how we see the game. It’s like a window from our world into the game world. 
+  The viewport controls how big the game "window" is and how it’s placed on our screen. There are many kinds of viewports. 
   The `FitViewport` ensures that no matter the size of our window, the full game will always be visible. 
   The parameters determine how large our visible game world will be in game units.
   The viewport uses the width and height `WORLD_WIDTH = 432;` and `WORLD_HEIGHT = 243;` this correspond to the game units.
@@ -182,7 +189,7 @@ This section will be the heaviest but should be nothing new if you followed the 
   }
   ```
 
-## pong-2 (“The Rectangle Update”)
+## pong-2 ("The Rectangle Update")
 - pong-2 produces a more complete, albeit static image of what our Pong program should look like.
   
 [Diff](https://github.com/cyrilou242/cs50-pong-java-libgdx/commit/7e6d9d046cea478dd482435b7c188acb8a7ee268).
@@ -214,7 +221,7 @@ This section will be the heaviest but should be nothing new if you followed the 
     final GlyphLayout layout = new GlyphLayout(smallFont, "Hello Pong!");
     smallFont.draw(batch, layout, (WORLD_WIDTH - layout.width) / 2, WORLD_HEIGHT - 20);
     ```
-    As you can see, are shifting “Hello Pong!” higher up on the screen.
+    As you can see, are shifting "Hello Pong!" higher up on the screen.
 - A `ShapeRenderer` to draw rectangles
   ```java
   private ShapeRenderer shape;
@@ -234,7 +241,7 @@ This section will be the heaviest but should be nothing new if you followed the 
   Similarly to `SpriteBatch` for textures, a shape has a `begin` and `end` methods to batch drawings.  
   The paddles are positioned on opposing ends of the screen, and the ball in the center.
 
-## pong-3 (“The Paddle Update”)
+## pong-3 ("The Paddle Update")
 - pong-3 adds interactivity to the Paddles by letting us move them up and down using the w and s keys 
   for the left Paddle and the up and down keys for the right Paddle.
 
@@ -244,7 +251,10 @@ This section will be the heaviest but should be nothing new if you followed the 
 
 - You’ll notice we’ve added a new constant near the top of main.lua:
   `PADDLE_SPEED = 200`
-  This is an arbitrary value that we’ve chosen for our paddle speed. It will be scaled by DeltaTime, so it’ll be multiplied by how much time has passed (in terms of seconds) since the last frame, so that our paddle movement will remain consistent regardless of how quickly or slowly our computer is running.
+  This is an arbitrary value that we’ve chosen for the paddle speed. It will be scaled by 
+  DeltaTime, so it’ll be multiplied by how much time has passed (in terms of seconds) since the 
+  last frame, so that the paddle movement will remain consistent regardless of how quickly or 
+  slowly the computer is running.
 - You’ll also find some new variables in `create()`
   ```java
   // in create()
@@ -284,10 +294,221 @@ This section will be the heaviest but should be nothing new if you followed the 
   scoreFont.draw(batch, String.valueOf(player2Score), WORLD_WIDTH / 2 + 30, WORLD_HEIGHT - (WORLD_HEIGHT / 3));
   ```
   
-## pong-4 (“The Ball Update”)
-Coming soon
+## pong-4 ("The Ball Update")
+- pong-4 adds motion to the Ball upon the user pressing enter.
 
+[Diff](https://github.com/cyrilou242/cs50-pong-java-libgdx/commit/ba69e2e1a8074d6b64e314afb789ae3a5cea1cbe#diff-56f635608c63a855eaca50332e022c9a778c605578313c3881923e84ab8e12bbR157)
 
+### Important code
+
+- Random starting speed for the ball
+  ```java
+  randomGen = new Random();
+  
+  // in create()
+  gameState = GameState.START;
+  
+  // in create() --> initBall()
+  ballX = WORLD_WIDTH / 2 - 2;
+  ballY = WORLD_HEIGHT / 2 - 2;
+  ballDx = randomGen.nextBoolean() ? 100 : -100;
+  ballDy = randomGen.nextInt(0, 101) - 50;
+  ```
+  `ballX` and `ballY` will keep track of the ball position, 
+  while `ballDX` and `ballDY` will keep track of the ball velocity. 
+  `gameState` will serve as a rudimentary "state machine", such that we’ll cycle it through the 
+  different states of our game (start, play, etc.)
+- In `render() -> input()`, we tweak the code for paddle movement by wrapping it around the 
+  `Math.max()` and `Math.min()` functions to ensure that the paddles can’t move beyond the edges 
+  of the screen.
+- We also add new code to ensure the ball can only move when we are in the "play" state:
+  ```java
+  if (gameState == GameState.PLAY) {
+    ballX += ballDx * Gdx.graphics.getDeltaTime();
+    ballY += ballDy * Gdx.graphics.getDeltaTime();
+  }
+  ```
+- Following this, we add 
+  functionality to launch the game (thus transitioning from the "START" state to the "PLAY" state) 
+  and implement ball movement mechanics:
+  ```java
+  if (Gdx.input.isKeyJustPressed(Keys.ESCAPE)) {
+    Gdx.app.exit();
+  } else if (Gdx.input.isKeyJustPressed(Keys.ENTER) || Gdx.input.isKeyJustPressed(Keys.BACKSPACE)) {
+      if (gameState == GameState.START) {
+        gameState = GameState.PLAY;
+      } else {
+        gameState = GameState.START;
+        initBall();
+     }
+  }
+  ```
+  Once in the "PLAY" state, we start the ball’s position in the center of the screen and assign it a random starting velocity.
+  Note that we changed the exit logic from `Gdx.input.isKeyPressed` to `Gdx.input.isKeyJustPressed`. 
+  `isKeyJustPressed` returns true if the button has been pressed since the last call to `render`.
+- Lastly, we tweak the `render() --> draw()` function so that we can see the changes from `render() --> input()` at each frame:
+  ```java
+  final GlyphLayout layout = new GlyphLayout(smallFont, "Hello " + gameState + " state!");
+  ...
+  shape.rect(ballX, ballY, 4, 4);
+  ```
+  The hello message now shows the game state.  
+  The ball rendering now uses position now uses the variables dynamically keeping track of the ball position.
+
+## pong-5 ("The Class Update")
+- pong-5 behaves exactly like pong-4. The biggest advantage we gain from this update is in the 
+  design of the code.
+- Open up pong-5 to take a look at how we’ve reorganized the code using classes and objects.
+
+[Diff](https://github.com/cyrilou242/cs50-pong-java-libgdx/commit/d7618d69705fa88e389b2c00d22017632d4e0851)
+
+### Important code
+- The main takeaway from this update is that we now have abstracted away from the `Main.java` the 
+  logic relevant to paddle and ball mechanics. These are now in their own classes, so you’ll see a few 
+  new files in the project directory. `Ball.java` contains all the logic specific to the ball, 
+  while Paddle.java contains all the logic specific to each paddle. 
+- This not only gives us greater flexibility moving forward, it also makes the `Main.java` file 
+  cleaner and more readable.
+
+## pong-6 ("The FPS Update")
+- pong-6 adds a title to the window and displays the FPS of the application on the screen as well
+
+[Diff](https://github.com/cyrilou242/cs50-pong-java-libgdx/commit/5504dc7fa7ba87faefcda09149c3f32e9d0867e5)
+
+### Important code
+- In `Lwjgl3Launcher.java`, we set the window title with
+  ```java
+  configuration.setTitle("Pong");
+  ```
+- The second addition to the code is in the `render() --> draw()` method. 
+  We display the FPS onto the screen
+  ```java
+  smallFont.setColor(Color.GREEN);
+  final GlyphLayout fpsLayout = new GlyphLayout(smallFont, "FPS: " + Gdx.graphics.getFramesPerSecond());
+  smallFont.draw(batch, fpsLayout, 10, WORLD_HEIGHT - 10);
+  ```
+
+## pong-7 ("The Collision Update")
+- pong-7 allows for the Ball to bounce off the Paddles and window boundaries.
+- Open up pong-7 to take a look at how we’ve incorporated AABB Collision Detection into our Pong program.
+
+[Diff](https://github.com/cyrilou242/cs50-pong-java-libgdx/commit/f29d35fb6ae879ed015bcc82112662c680c7d8e7)
+
+### AABB Collision Detection
+- AABB Collision Detection relies on all colliding entities to have "axis-aligned bounding boxes", 
+  which simply means their collision boxes contain no rotation in the world space, which allows us 
+  to use a simple math formula to test for collision:
+  ```python
+  # pseudo code
+  if rect1.x is not > rect2.x + rect2.width and
+      rect1.x + rect1.width is not < rect2.x and
+      rect1.y is not > rect2.y + rect2.height and
+      rect1.y + rect1.height is not < rect2.y:
+      collision is true
+  else
+      collision is false
+  ```
+  Essentially, the formula is merely checking if the two boxes are colliding in any way.
+- We can use AABB Collision Detection to detect whether the Ball is colliding with the Paddles and 
+  react accordingly.
+- We can apply similar logic to detect if the Ball collides with a window boundary.
+
+### Important code
+- Notice how we’ve added a collides function to the `Ball` class. It uses the above algorithm to 
+  determine whether there has been a collision, returning true if so and false otherwise.
+- We can use this function in `render()` to keep track of the ball’s changing position and 
+  velocity after each collision with a paddle:
+  ```java
+  if (ball.collides(player1)) {
+    ball.dx = -ball.dx * 1.03f;
+    ball.x = player1.x + Paddle.WIDTH;
+    if (ball.dy < 0) {
+      ball.dy = -randomGen.nextInt(10, 151);
+    } else {
+      ball.dy = randomGen.nextInt(10, 151);
+    }
+  }
+  if (ball.collides(player2)) {
+    ball.dx = -ball.dx * 1.03f;
+    ball.x = player2.x - ball.width;
+    if (ball.dy < 0) {
+      ball.dy = -randomGen.nextInt(10, 151);
+    } else {
+      ball.dy = randomGen.nextInt(10, 151);
+    }
+  }
+  ```
+  Take special note of how we shift the ball away from the paddle first before reversing its 
+  direction if we detect a collision in which the ball and paddle’s edges overlap! This prevents an infinite collision loop between the ball and paddle.
+- We also implement similar logic for collisions with the window edges:
+  ```java
+  if (ball.y <= 0) {
+    ball.y = 0;
+    ball.dy = -ball.dy;
+  }
+  if (ball.y >= WORLD_HEIGHT - ball.height) {
+    ball.y = WORLD_HEIGHT - ball.height;
+    ball.dy = -ball.dy;
+  }
+  ```
+
+## pong-8 ("The Score Update")
+- pong-8 allows us to keep track of the score.
+
+[Diff](https://github.com/cyrilou242/cs50-pong-java-libgdx/commit/6cffd00c3688830f4bbfb860d1092b61537eefc4) 
+
+### Important code
+- Essentially, all we need to do is increment the score variables for each player whenever 
+  the ball collides with their goal boundary:
+  ```java
+  if (ball.x < 0) {
+    servingPlayer = 1;
+    player2Score++;
+    ball.reset();
+    gameState = GameState.START;
+  } else if (ball.x >= WORLD_WIDTH - ball.width) {
+    servingPlayer = 2;
+    player1Score++;
+    ball.reset();
+    gameState = GameState.START;
+  }
+  ```
+
+## pong-9 ("The Serve Update")
+- pong-9 introduces a new state, "SERVE", to our game.
+
+[Diff](https://github.com/cyrilou242/cs50-pong-java-libgdx/commit/7e55fe6744531e2a34888c3150d08c75595671d6)
+
+### What is a State Machine?
+- Currently in our Pong program we’ve only talked about state a little bit. We have the "START" 
+  state, which means the game is ready for us to press "ENTER" so that the ball will start 
+  moving, and the "PLAY" state, which means the game is currently underway.
+- A state machine concerns itself with monitoring what is the current state and what transitions 
+  take place between possible states, such that each individual state is produced by a specific 
+  transition and has its own logic.
+- In pong-9, we allow a player to "SERVE" the ball by not having to defend during their first turn.
+- We transition from the "PLAY" state to the "SERVE" state by scoring, and from the "SERVE" state 
+  to the "PLAY" state by pressing enter. The game begins in the "START" state, and transitions to 
+  the "SERVE" state by pressing enter.
+
+### Important Code
+- We can add the new "serve" state by making an additional condition within the `render` function:
+  ```java
+  if (gameState == GameState.SERVE) {
+    ball.dy = randomGen.nextInt(0, 101) - 50;
+    if (servingPlayer == 1) {
+      ball.dx = randomGen.nextInt(140, 200) ;
+    } else {
+      ball.dx = -randomGen.nextInt(140, 200);
+    }
+  }
+  ```
+  The idea is that when a player gets scored on, they should get to serve the ball, 
+  so as to not be immediately on defense. We do this by adjusting the ball velocity in 
+  the "SERVE" state based off which player is serving.
+
+## pong-10 (“The Victory Update”)
+coming soon
   
    
   
