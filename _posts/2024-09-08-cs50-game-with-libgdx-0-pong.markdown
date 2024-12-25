@@ -175,7 +175,7 @@ This section will be the heaviest but should be nothing new if you followed the 
   Returns true if the key is pressed. It allows us to receive inputs from the keyboard for our game.
 - `Gdx.app.exit()`   
   Terminates the application upon execution.
-- We add a way to quit the game via user input, using the two functions discussed above:
+- We add a way to quit the game via user input, using the two functions above:
   ```java
   if (Gdx.input.isKeyPressed(Keys.ESCAPE)) {
     Gdx.app.exit();
@@ -233,6 +233,59 @@ This section will be the heaviest but should be nothing new if you followed the 
   ```
   Similarly to `SpriteBatch` for textures, a shape has a `begin` and `end` methods to batch drawings.  
   The paddles are positioned on opposing ends of the screen, and the ball in the center.
+
+## pong-3 (“The Paddle Update”)
+- pong-3 adds interactivity to the Paddles by letting us move them up and down using the w and s keys 
+  for the left Paddle and the up and down keys for the right Paddle.
+
+[Diff](https://github.com/cyrilou242/cs50-pong-java-libgdx/commit/45eaeb9fb37e96aad37f0e3dd6de3e33103c477d).
+
+### Important code
+
+- You’ll notice we’ve added a new constant near the top of main.lua:
+  `PADDLE_SPEED = 200`
+  This is an arbitrary value that we’ve chosen for our paddle speed. It will be scaled by DeltaTime, so it’ll be multiplied by how much time has passed (in terms of seconds) since the last frame, so that our paddle movement will remain consistent regardless of how quickly or slowly our computer is running.
+- You’ll also find some new variables in `create()`
+  ```java
+  // in create()
+  parameter.size = 32;
+  scoreFont = generator.generateFont(parameter);
+  scoreFont.getRegion().getTexture().setFilter(TextureFilter.Nearest, TextureFilter.Nearest);
+  scoreFont.setColor(Color.WHITE);
+  
+  player1Score = 0;
+  player2Score = 0;
+  player1Y = WORLD_HEIGHT - 30 - 20;
+  player2Y = 30;
+  ```
+  In particular, we’ve created a new font object that is of larger size so that we can display each 
+  player’s score more visibly on the screen, and allocated two variables for the purpose of 
+  scorekeeping. The last two variables will keep track of each paddle’s vertical position, since 
+  the paddles will be able to move up and down.
+- Next, you’ll see that we’ve finally defined behavior for `render() -> input()`:
+  ```java
+  if (Gdx.input.isKeyPressed(Keys.DOWN)) {
+    player2Y -= PADDLE_SPEED * Gdx.graphics.getDeltaTime();
+  } else if (Gdx.input.isKeyPressed(Keys.UP)) {
+    player2Y += PADDLE_SPEED * Gdx.graphics.getDeltaTime();
+  }
+  if (Gdx.input.isKeyPressed(Keys.S)) {
+    player1Y -= PADDLE_SPEED * Gdx.graphics.getDeltaTime();
+  } else if (Gdx.input.isKeyPressed(Keys.Z) || Gdx.input.isKeyPressed(Keys.W)) {
+    // Z or W to be compatible with both AZERTY and QWERTY in a simple way
+    player1Y += PADDLE_SPEED * Gdx.graphics.getDeltaTime();
+  }
+  ```
+  Here, we’ve implemented a way for each player to move their paddle.
+- Lastly, in `render() --> draw()` you’ll see that we’ve added code for displaying the score on 
+  the screen:
+  ```java
+  scoreFont.draw(batch, String.valueOf(player1Score), WORLD_WIDTH / 2 - 50, WORLD_HEIGHT - (WORLD_HEIGHT / 3));
+  scoreFont.draw(batch, String.valueOf(player2Score), WORLD_WIDTH / 2 + 30, WORLD_HEIGHT - (WORLD_HEIGHT / 3));
+  ```
+  
+## pong-4 (“The Ball Update”)
+Coming soon
 
 
   
